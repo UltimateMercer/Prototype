@@ -34,6 +34,11 @@ $colors: (
   dark: $dark
 );
 */
+/*
+$btn-padding-y-medium:        .7rem !default;
+$btn-padding-x-medium:        1.6rem !default;
+$btn-font-size-medium:        .7rem !default;
+*/
 /*$checkbox-animation-check: 0.3s;
 $checkbox-checked-color: $blue;
 $checkbox-transform-scale: 2.3, 2.3, 1;
@@ -69,13 +74,13 @@ $checkbox-animation-ripple: 500ms;
   --orange: #ff6d00;
   --light: #f8f9fa;
   --grey: #eaeaea;
-  --dark: #000a0c;
+  --dark: #070707;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
   --breakpoint-md: 768px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
-  --font-family-sans-serif: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --font-family-sans-serif: Roboto, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
@@ -98,7 +103,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 
 body {
   margin: 0;
-  font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -1823,23 +1828,23 @@ pre code {
 .table-dark,
 .table-dark > th,
 .table-dark > td {
-  background-color: #b8babb;
+  background-color: #bababa;
 }
 
 .table-dark th,
 .table-dark td,
 .table-dark thead th,
 .table-dark tbody + tbody {
-  border-color: #7a8081;
+  border-color: #7e7e7e;
 }
 
 .table-hover .table-dark:hover {
-  background-color: #abadaf;
+  background-color: #adadad;
 }
 
 .table-hover .table-dark:hover > td,
 .table-hover .table-dark:hover > th {
-  background-color: #abadaf;
+  background-color: #adadad;
 }
 
 .table-active,
@@ -2485,8 +2490,6 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 600;
-  font-size: .81rem;
   color: #212529;
   text-align: center;
   vertical-align: middle;
@@ -2498,21 +2501,19 @@ textarea.form-control {
   text-transform: uppercase;
   outline: 0;
   border: 0;
-  padding: 0.75rem 1.875rem;
-  font-size: 0.75rem;
+  margin: 0.375rem;
+  padding: 0.84rem 2.14rem;
+  font-size: 0.83rem;
   line-height: 1.5;
   border-radius: 0.125rem;
   transition: all 0.15s ease-in-out;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 @media (prefers-reduced-motion: reduce) {
   .btn {
     transition: none;
   }
-}
-
-.btn.btn-raised:not(.btn-link) {
-  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
 }
 
 .btn.btn-rounded {
@@ -2554,7 +2555,6 @@ fieldset:disabled a.btn {
 .btn-primary {
   background-color: #00bfa5;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-primary:hover {
@@ -2578,7 +2578,6 @@ fieldset:disabled a.btn {
 .btn-secondary {
   background-color: #868e96;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-secondary:hover {
@@ -2602,7 +2601,6 @@ fieldset:disabled a.btn {
 .btn-success {
   background-color: #00c853;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-success:hover {
@@ -2626,7 +2624,6 @@ fieldset:disabled a.btn {
 .btn-info {
   background-color: #00bcd4;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-info:hover {
@@ -2650,7 +2647,6 @@ fieldset:disabled a.btn {
 .btn-warning {
   background-color: #fbc02d;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-warning:hover {
@@ -2674,7 +2670,6 @@ fieldset:disabled a.btn {
 .btn-danger {
   background-color: #f44336;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-danger:hover {
@@ -2698,7 +2693,6 @@ fieldset:disabled a.btn {
 .btn-purple {
   background-color: #9c27b0;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-purple:hover {
@@ -2722,7 +2716,6 @@ fieldset:disabled a.btn {
 .btn-indigo {
   background-color: #3f51b5;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-indigo:hover {
@@ -2746,7 +2739,6 @@ fieldset:disabled a.btn {
 .btn-yellow_neon {
   background-color: #EBEA6B;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-yellow_neon:hover {
@@ -2770,7 +2762,6 @@ fieldset:disabled a.btn {
 .btn-softgreen {
   background-color: #92CE92;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-softgreen:hover {
@@ -2794,7 +2785,6 @@ fieldset:disabled a.btn {
 .btn-pink {
   background-color: #e91e63;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-pink:hover {
@@ -2818,7 +2808,6 @@ fieldset:disabled a.btn {
 .btn-softpink {
   background-color: #E33D7E;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-softpink:hover {
@@ -2842,7 +2831,6 @@ fieldset:disabled a.btn {
 .btn-softpurple {
   background-color: #725991;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-softpurple:hover {
@@ -2866,7 +2854,6 @@ fieldset:disabled a.btn {
 .btn-orange {
   background-color: #ff6d00;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-orange:hover {
@@ -2889,7 +2876,6 @@ fieldset:disabled a.btn {
 
 .btn-light {
   background-color: #f8f9fa;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-light:hover {
@@ -2913,7 +2899,6 @@ fieldset:disabled a.btn {
 .btn-grey {
   background-color: #eaeaea;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-grey:hover {
@@ -2935,22 +2920,21 @@ fieldset:disabled a.btn {
 }
 
 .btn-dark {
-  background-color: #000a0c;
+  background-color: #070707;
   color: #ffffff;
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 1px rgba(0, 0, 0, 0.075);
 }
 
 .btn-dark:hover {
-  background-color: #000a0c;
+  background-color: #070707;
 }
 
 .btn-dark.disabled, .btn-dark:disabled {
-  background-color: #000a0c;
+  background-color: #070707;
 }
 
 .btn-dark:not(:disabled):not(.disabled):active, .btn-dark:not(:disabled):not(.disabled).active,
 .show > .btn-dark.dropdown-toggle {
-  background-color: #000a0c;
+  background-color: #070707;
   /*@if $enable-gradients {
       background-image: none; // Remove the gradient for the pressed/active state
     }
@@ -3423,24 +3407,24 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-dark {
-  color: #000a0c;
+  color: #070707;
   background-color: transparent;
   background-image: none;
 }
 
 .btn-outline-dark:hover {
-  color: #000a0c;
+  color: #070707;
   outline: 0;
 }
 
 .btn-outline-dark.disabled, .btn-outline-dark:disabled {
-  color: #000a0c;
+  color: #070707;
   background-color: transparent;
 }
 
 .btn-outline-dark:not(:disabled):not(.disabled):active, .btn-outline-dark:not(:disabled):not(.disabled).active,
 .show > .btn-outline-dark.dropdown-toggle {
-  color: #000a0c;
+  color: #070707;
   /*&:focus {
       // Avoid using mixin so we can pass custom focus shadow properly
       @if $enable-shadows and $btn-active-box-shadow != none {
@@ -3788,24 +3772,24 @@ fieldset:disabled a.btn {
 }
 
 .btn-outline-v2-dark {
-  color: #000a0c;
-  border: 2px solid #000a0c;
+  color: #070707;
+  border: 2px solid #070707;
   background-color: transparent;
   background-image: none;
 }
 
 .btn-outline-v2-dark:hover {
-  color: #000a0c;
+  color: #070707;
 }
 
 .btn-outline-v2-dark.disabled, .btn-outline-v2-dark:disabled {
-  color: #000a0c;
+  color: #070707;
   background-color: transparent;
 }
 
 .btn-outline-v2-dark:active, .btn-outline-v2-dark.active,
 .show > .btn-outline-v2-dark.dropdown-toggle {
-  color: #000a0c;
+  color: #070707;
 }
 
 .btn-gradient-peach {
@@ -3893,8 +3877,8 @@ fieldset:disabled a.btn {
 }
 
 .btn-link {
-  font-weight: 600;
-  color: #000a0c;
+  font-weight: 400;
+  color: #070707;
 }
 
 .btn-link:hover {
@@ -3906,7 +3890,7 @@ fieldset:disabled a.btn {
 .btn-link:focus, .btn-link.focus {
   text-decoration: underline;
   background-color: transparent;
-  color: #000a0c;
+  color: #070707;
 }
 
 .btn-link:disabled, .btn-link.disabled {
@@ -3915,15 +3899,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-lg, .btn-group-lg > .btn {
-  padding: 1.125rem 2.375rem;
-  font-size: 1.25rem;
+  padding: 1rem 2.4rem;
+  font-size: 0.94rem;
   line-height: 1.5;
   border-radius: 0.125rem;
 }
 
 .btn-sm, .btn-group-sm > .btn {
-  padding: 0.3125rem 1.25rem;
-  font-size: 0.875rem;
+  padding: 0.5rem 1.6rem;
+  font-size: 0.64rem;
   line-height: 1.5;
   border-radius: 0.125rem;
 }
@@ -4277,8 +4261,8 @@ input[type="button"].btn-block {
 }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem;
+  padding-right: 1.605rem;
+  padding-left: 1.605rem;
 }
 
 .dropdown-toggle-split::after,
@@ -4292,13 +4276,13 @@ input[type="button"].btn-block {
 }
 
 .btn-sm + .dropdown-toggle-split, .btn-group-sm > .btn + .dropdown-toggle-split {
-  padding-right: 0.375rem;
-  padding-left: 0.375rem;
+  padding-right: 1.2rem;
+  padding-left: 1.2rem;
 }
 
 .btn-lg + .dropdown-toggle-split, .btn-group-lg > .btn + .dropdown-toggle-split {
-  padding-right: 0.75rem;
-  padding-left: 0.75rem;
+  padding-right: 1.8rem;
+  padding-left: 1.8rem;
 }
 
 .btn-group.show .dropdown-toggle {
@@ -6088,12 +6072,12 @@ input[type="button"].btn-block {
 }
 
 .alert-light {
-  color: #000a0c;
+  color: #070707;
   background-color: #f8f9fa;
 }
 
 .alert-light .alert-link {
-  color: #000a0c;
+  color: #070707;
   text-decoration: underline;
   font-weight: 500;
 }
@@ -6111,7 +6095,7 @@ input[type="button"].btn-block {
 
 .alert-dark {
   color: #ffffff;
-  background-color: #000a0c;
+  background-color: #070707;
 }
 
 .alert-dark .alert-link {
@@ -6631,19 +6615,19 @@ input[type="button"].btn-block {
 }
 
 .list-group-item-dark {
-  color: #000506;
-  background-color: #b8babb;
+  color: #040404;
+  background-color: #bababa;
 }
 
 .list-group-item-dark.list-group-item-action:hover, .list-group-item-dark.list-group-item-action:focus {
-  color: #000506;
-  background-color: #abadaf;
+  color: #040404;
+  background-color: #adadad;
 }
 
 .list-group-item-dark.list-group-item-action.active {
   color: #ffffff;
-  background-color: #000506;
-  border-color: #000506;
+  background-color: #040404;
+  border-color: #040404;
 }
 
 .close {
@@ -6950,7 +6934,7 @@ a.close.disabled {
   z-index: 1070;
   display: block;
   margin: 0;
-  font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7063,7 +7047,7 @@ a.close.disabled {
   z-index: 1060;
   display: block;
   max-width: 276px;
-  font-family: "Open Sans", Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  font-family: Roboto, "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif;
   font-style: normal;
   font-weight: 400;
   line-height: 1.5;
@@ -7572,7 +7556,7 @@ a.close.disabled {
 }
 
 .bg-dark {
-  background-color: #000a0c !important;
+  background-color: #070707 !important;
 }
 
 .bg-gradient-primary {
@@ -7640,7 +7624,7 @@ a.close.disabled {
 }
 
 .bg-gradient-dark {
-  background: #000a0c linear-gradient(180deg, #262f30, #000a0c) repeat-x !important;
+  background: #070707 linear-gradient(180deg, #2c2c2c, #070707) repeat-x !important;
 }
 
 .bg-white {
@@ -7776,7 +7760,7 @@ a.close.disabled {
 }
 
 .border-dark {
-  border-color: #000a0c !important;
+  border-color: #070707 !important;
 }
 
 .border-white {
@@ -10907,7 +10891,7 @@ a.text-grey:hover, a.text-grey:focus {
 }
 
 .text-dark {
-  color: #000a0c !important;
+  color: #070707 !important;
 }
 
 a.text-dark:hover, a.text-dark:focus {
@@ -11403,6 +11387,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(69, 82, 110, 0.3);
 }
 
+.rgba-custom-color-medium,
+.rgba-custom-color-medium:after {
+  background-color: rgba(69, 82, 110, 0.5);
+}
+
 .rgba-custom-color-strong,
 .rgba-custom-color-strong:after {
   background-color: rgba(69, 82, 110, 0.7);
@@ -11460,6 +11449,11 @@ a.waves-effect, a.waves-light {
 .rgba-red-light,
 .rgba-red-light:after {
   background-color: rgba(244, 67, 54, 0.3);
+}
+
+.rgba-red-medium,
+.rgba-red-medium:after {
+  background-color: rgba(244, 67, 54, 0.5);
 }
 
 .rgba-red-strong,
@@ -11537,6 +11531,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(233, 30, 99, 0.3);
 }
 
+.rgba-pink-medium,
+.rgba-pink-medium:after {
+  background-color: rgba(233, 30, 99, 0.5);
+}
+
 .rgba-pink-strong,
 .rgba-pink-strong:after {
   background-color: rgba(233, 30, 99, 0.7);
@@ -11610,6 +11609,11 @@ a.waves-effect, a.waves-light {
 .rgba-purple-light,
 .rgba-purple-light:after {
   background-color: rgba(156, 39, 176, 0.3);
+}
+
+.rgba-purple-medium,
+.rgba-purple-medium:after {
+  background-color: rgba(156, 39, 176, 0.5);
 }
 
 .rgba-purple-strong,
@@ -11687,6 +11691,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(103, 58, 183, 0.3);
 }
 
+.rgba-deep-purple-medium,
+.rgba-deep-purple-medium:after {
+  background-color: rgba(103, 58, 183, 0.5);
+}
+
 .rgba-deep-purple-strong,
 .rgba-deep-purple-strong:after {
   background-color: rgba(103, 58, 183, 0.7);
@@ -11760,6 +11769,11 @@ a.waves-effect, a.waves-light {
 .rgba-indigo-light,
 .rgba-indigo-light:after {
   background-color: rgba(63, 81, 181, 0.3);
+}
+
+.rgba-indigo-medium,
+.rgba-indigo-medium:after {
+  background-color: rgba(63, 81, 181, 0.5);
 }
 
 .rgba-indigo-strong,
@@ -11837,6 +11851,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(33, 150, 243, 0.3);
 }
 
+.rgba-blue-medium,
+.rgba-blue-medium:after {
+  background-color: rgba(33, 150, 243, 0.5);
+}
+
 .rgba-blue-strong,
 .rgba-blue-strong:after {
   background-color: rgba(33, 150, 243, 0.7);
@@ -11910,6 +11929,11 @@ a.waves-effect, a.waves-light {
 .rgba-light-blue-light,
 .rgba-light-blue-light:after {
   background-color: rgba(3, 169, 244, 0.3);
+}
+
+.rgba-light-blue-medium,
+.rgba-light-blue-medium:after {
+  background-color: rgba(3, 169, 244, 0.5);
 }
 
 .rgba-light-blue-strong,
@@ -11987,6 +12011,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(0, 188, 212, 0.3);
 }
 
+.rgba-cyan-medium,
+.rgba-cyan-medium:after {
+  background-color: rgba(0, 188, 212, 0.5);
+}
+
 .rgba-cyan-strong,
 .rgba-cyan-strong:after {
   background-color: rgba(0, 188, 212, 0.7);
@@ -12060,6 +12089,11 @@ a.waves-effect, a.waves-light {
 .rgba-teal-light,
 .rgba-teal-light:after {
   background-color: rgba(0, 150, 136, 0.3);
+}
+
+.rgba-teal-medium,
+.rgba-teal-medium:after {
+  background-color: rgba(0, 150, 136, 0.5);
 }
 
 .rgba-teal-strong,
@@ -12137,6 +12171,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(76, 175, 80, 0.3);
 }
 
+.rgba-green-medium,
+.rgba-green-medium:after {
+  background-color: rgba(76, 175, 80, 0.5);
+}
+
 .rgba-green-strong,
 .rgba-green-strong:after {
   background-color: rgba(76, 175, 80, 0.7);
@@ -12210,6 +12249,11 @@ a.waves-effect, a.waves-light {
 .rgba-light-green-light,
 .rgba-light-green-light:after {
   background-color: rgba(139, 195, 74, 0.3);
+}
+
+.rgba-light-green-medium,
+.rgba-light-green-medium:after {
+  background-color: rgba(139, 195, 74, 0.5);
 }
 
 .rgba-light-green-strong,
@@ -12287,6 +12331,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(205, 220, 57, 0.3);
 }
 
+.rgba-lime-medium,
+.rgba-lime-medium:after {
+  background-color: rgba(205, 220, 57, 0.5);
+}
+
 .rgba-lime-strong,
 .rgba-lime-strong:after {
   background-color: rgba(205, 220, 57, 0.7);
@@ -12360,6 +12409,11 @@ a.waves-effect, a.waves-light {
 .rgba-yellow-light,
 .rgba-yellow-light:after {
   background-color: rgba(255, 235, 59, 0.3);
+}
+
+.rgba-yellow-medium,
+.rgba-yellow-medium:after {
+  background-color: rgba(255, 235, 59, 0.5);
 }
 
 .rgba-yellow-strong,
@@ -12437,6 +12491,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(255, 193, 7, 0.3);
 }
 
+.rgba-amber-medium,
+.rgba-amber-medium:after {
+  background-color: rgba(255, 193, 7, 0.5);
+}
+
 .rgba-amber-strong,
 .rgba-amber-strong:after {
   background-color: rgba(255, 193, 7, 0.7);
@@ -12510,6 +12569,11 @@ a.waves-effect, a.waves-light {
 .rgba-orange-light,
 .rgba-orange-light:after {
   background-color: rgba(255, 152, 0, 0.3);
+}
+
+.rgba-orange-medium,
+.rgba-orange-medium:after {
+  background-color: rgba(255, 152, 0, 0.5);
 }
 
 .rgba-orange-strong,
@@ -12587,6 +12651,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(255, 87, 34, 0.3);
 }
 
+.rgba-deep-orange-medium,
+.rgba-deep-orange-medium:after {
+  background-color: rgba(255, 87, 34, 0.5);
+}
+
 .rgba-deep-orange-strong,
 .rgba-deep-orange-strong:after {
   background-color: rgba(255, 87, 34, 0.7);
@@ -12662,6 +12731,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(121, 85, 72, 0.3);
 }
 
+.rgba-brown-medium,
+.rgba-brown-medium:after {
+  background-color: rgba(121, 85, 72, 0.5);
+}
+
 .rgba-brown-strong,
 .rgba-brown-strong:after {
   background-color: rgba(121, 85, 72, 0.7);
@@ -12719,6 +12793,11 @@ a.waves-effect, a.waves-light {
 .rgba-blue-grey-light,
 .rgba-blue-grey-light:after {
   background-color: rgba(96, 125, 139, 0.3);
+}
+
+.rgba-blue-grey-medium,
+.rgba-blue-grey-medium:after {
+  background-color: rgba(96, 125, 139, 0.5);
 }
 
 .rgba-blue-grey-strong,
@@ -12780,6 +12859,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(158, 158, 158, 0.3);
 }
 
+.rgba-grey-medium,
+.rgba-grey-medium:after {
+  background-color: rgba(158, 158, 158, 0.5);
+}
+
 .rgba-grey-strong,
 .rgba-grey-strong:after {
   background-color: rgba(158, 158, 158, 0.7);
@@ -12819,6 +12903,11 @@ a.waves-effect, a.waves-light {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+.rgba-black-medium,
+.rgba-black-medium:after {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 .rgba-black-strong,
 .rgba-black-strong:after {
   background-color: rgba(0, 0, 0, 0.7);
@@ -12840,6 +12929,11 @@ a.waves-effect, a.waves-light {
 .rgba-white-light,
 .rgba-white-light:after {
   background-color: rgba(255, 255, 255, 0.3);
+}
+
+.rgba-white-medium,
+.rgba-white-medium:after {
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .rgba-white-strong,
