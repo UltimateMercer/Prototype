@@ -65,6 +65,22 @@
         to { transform: translateY(0); }
       }
 
+      .card-column{
+        text-align: left;
+        column-count: 4;
+        column-gap: 8px; }
+        @media screen and (max-width: 1200px) {
+          section {
+            column-count: 2; } }
+        @media screen and (max-width: 800px) {
+          section {
+            column-count: 1; } }
+        section > .card {
+          margin-bottom: 8px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
     </style>
   </head>
   <body>
@@ -224,116 +240,168 @@
               </div>
 
             </div-->
-            <div class="container-fluid">
+
+            <div class="container">
               <div class="row">
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+                <div class="card-columns">
+
+                  <div class="">
+                    <div class="card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top " src="https://i.imgur.com/gGDZ3X4.png" alt="Card image cap">
+                        <a href="#!">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">This is a wider card.</p>
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class=" ">
+                    <div class=" card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top" src="https://i.imgur.com/qpw5KQ1.png" alt="Card image cap">
+                        <a href="#!" class="stretched-link">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5><span class="badge bg-info">Coleção</span></h5>
+                        <h3 class="mb-0">Dragon Ball</h3>
+                        <p class="card-text mb-1">This is a wider card.</p>
+                        <p class="card-text text-muted">Nov 11</p>
+
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class=" ">
+                    <div class=" card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top" src="https://i.imgur.com/WH3nZum.png" alt="Card image cap">
+                        <a href="#!" class="stretched-link">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">GTA - Style</h3>
+                        <p class="card-text mb-1">This is a wider card.</p>
+                        <p class="card-text text-muted">Nov 11</p>
+
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class="">
+                    <div class=" card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top" src="https://i.imgur.com/z8V94Q8.png" alt="Card image cap">
+                        <a href="#!" class="stretched-link">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5><span class="badge bg-info">Coleção</span></h5>
+                        <h3 class="mb-0">Vitola Wars</h3>
+                        <p class="card-text mb-1">This is a wider card.</p>
+                        <p class="card-text text-muted">Nov 11</p>
+
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class="">
+                    <div class="card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top " src="https://i.imgur.com/gGDZ3X4.png" alt="Card image cap">
+                        <a href="#!">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <p class="card-text">This is a wider card.</p>
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class=" ">
+                    <div class=" card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top" src="https://i.imgur.com/qpw5KQ1.png" alt="Card image cap">
+                        <a href="#!" class="stretched-link">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5><span class="badge bg-info">Coleção</span></h5>
+                        <h3 class="mb-0">Dragon Ball</h3>
+                        <p class="card-text mb-1">This is a wider card.</p>
+                        <p class="card-text text-muted">Nov 11</p>
+
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class=" ">
+                    <div class=" card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top" src="https://i.imgur.com/WH3nZum.png" alt="Card image cap">
+                        <a href="#!" class="stretched-link">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">GTA - Style</h3>
+                        <p class="card-text mb-1">This is a wider card.</p>
+                        <p class="card-text text-muted">Nov 11</p>
+
                       </div>
                     </div>
+
                   </div>
-                </div>
-                <div class="col-lg-3 col-md-4 col-6">
-                  <div class="card bg-dark text-white card-sizing my-2 mx-2">
-                    <div class="view">
-                      <img src="https://i.imgur.com/nM1cqGJ.png" class="card-img" alt="...">
-                      <div class="mask pattern-1 rgba-black-slight"></div>
-                      <div class="card-img-overlay">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        <p class="card-text">Last updated 3 mins ago</p>
+
+                  <div class="">
+                    <div class=" card bg-soft">
+                      <!-- Card image -->
+                      <div class="view">
+                        <img class="card-img-top" src="https://i.imgur.com/z8V94Q8.png" alt="Card image cap">
+                        <a href="#!" class="stretched-link">
+                          <div class=""></div>
+                        </a>
+                      </div>
+                      <div class="card-body">
+                        <h5><span class="badge bg-info">Coleção</span></h5>
+                        <h3 class="mb-0">Vitola Wars</h3>
+                        <p class="card-text mb-1">This is a wider card.</p>
+                        <p class="card-text text-muted">Nov 11</p>
+
                       </div>
                     </div>
+
                   </div>
-                </div>
+
+
+
 
 
               </div>
-
             </div>
           </div>
         </div>
@@ -349,9 +417,14 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="wow.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
     <script type="text/javascript">
-    new WOW().init();
+    /*$('.grid').masonry({
+      // options
+      itemSelector: '.grid-item',
+      columnWidth: 200
+    });*/
+
     $(function () {
       $('[data-toggle="tooltip"]').tooltip()
     })
