@@ -1,0 +1,521 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+
+
+    .bg-transparency-dark{
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+      .img-board{
+        max-width: 12.5rem;
+        height: auto;
+      }
+
+      .portfolium-header{
+        background-color: #070707;
+      }
+
+      .portfolium-block{
+        background-color: #070707;
+      }
+
+      .text-box{
+        background-color: #EAEAEA;
+      }
+
+      .news{
+        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
+        background-size: cover;
+        /*filter: invert(1) hue-rotate(210deg);*/
+      }
+
+      .card-header{
+        border-radius: 0 !important;
+      }
+
+      .card-sizing{
+
+      }
+
+      .come-in {
+        transform: translateY(150px);
+        animation: come-in 0.8s ease forwards;
+      }
+      .come-in:nth-child(odd) {
+        animation-duration: 0.6s;
+      }
+      .already-visible {
+        transform: translateY(0);
+        animation: none;
+      }
+
+      @keyframes come-in {
+        to { transform: translateY(0); }
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand sticky-top navbar-dark bg-transparency-dark py-md-3">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="dist/img/logo/blacklight_1new.png" class="img-fluid brand" alt="Responsive image">
+        </a>
+        <div class="navbar-collapse justify-content-stretch">
+          <ul class="navbar-nav">
+                <!--li class="nav-item py-md-2">
+                  <a class="nav-link" href="#" id="sidebarCollapse" data-toggle="tooltip" data-placement="right" title="Menu"><i class="fas fa-bars"></i></a>
+                </li-->
+                <!--li class="nav-item py-md-2">
+                  <a class="nav-link" href="//codeply.com">Codeply</a>
+                </li-->
+          </ul>
+          <ul class="navbar-nav ml-auto">
+                <!--li class="nav-item py-md-2 mr-auto">
+                  <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li-->
+                <!--li class="nav-item py-md-2">
+                  <a class="nav-link" href="//codeply.com">Codeply</a>
+                </li-->
+                <li class="nav-item py-md-2">
+                  <!--a class="nav-link" id="change"><i class="fas fa-lightbulb"></i></a-->
+                  <!--button id="changer" class="btn btn-outline-v2-info my-2 my-sm-0" type="button"><i class="fas fa-lightbulb"></i></button-->
+                </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 portfolium-header">
+            <div class="container">
+              <div class="my-5">
+                <div class="">
+                  <img src="dist/img/logo/portfoliumheader.png" alt="" class="img-fluid mx-auto d-block my-auto">
+                </div>
+              </div>
+              <div class="col-12 py-3 bg-dark">
+                <div class="alert alert-info" role="alert">
+                  Ver outro layout <a href="article2.html" class="stretched-link text-light">clique aqui!</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-12 portfolium-block">
+            <div class="container text-box shadow-lg mb-5">
+              <div class="px-5 py-5">
+                <div class="mt-3 mb-5">
+                  <img class="img-fluid d-block mx-auto shadow-image rounded" width="350" src="https://i.imgur.com/VTAHBAZ.jpg" title="source: imgur.com" />
+                  <h4 class="text-center text-dark mt-3 mb-5"><strong>Julian Silva da Cunha</strong></h4>
+                </div>
+
+                <div class="mx-2">
+                  <p>I am a creative illustrator and graphic designer with more than 10 years of experience.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <p>Originally from Toronto, currently based in London.</p>
+                </div>
+
+
+                <div class="card bg-soft-transparency-light my-5">
+                  <h5 class="card-header bg-info text-light"><strong>Desenvolvedor Front-end</strong></h5>
+                  <div class="card-body">
+                    <h5 class="card-title">Linguagens conhecidas:</h5>
+                    <h5>
+                      <span class="badge bg-info">HTML</span>
+                      <span class="badge bg-info">CSS</span>
+                      <span class="badge bg-info">SASS/SCSS</span>
+                      <span class="badge bg-info">PHP</span>
+                    </h5>
+                    <h5 class="card-title">Ferramentas de desenvolvimento:</h5>
+                    <h5>
+                      <span class="badge bg-info">Atom</span>
+                      <span class="badge bg-info">Sublime</span>
+                      <span class="badge bg-info">Bootstrap</span>
+                      <span class="badge bg-info">jQuery</span>
+                      <span class="badge bg-info">GitHub</span>
+                      <span class="badge bg-info">GitKraken</span>
+                      <span class="badge bg-info">NodeJS</span>
+                      <span class="badge bg-info">NPM</span>
+                    </h5>
+                  </div>
+                </div>
+
+                <div class="card bg-soft-transparency-light my-5">
+                  <h5 class="card-header bg-purple text-light"><strong>Design</strong></h5>
+                  <div class="card-body">
+                    <h5 class="card-title">O que eu gosto de desenvolver:</h5>
+                    <h5>
+                      <span class="badge bg-purple">Websites</span>
+                      <span class="badge bg-purple">Posters</span>
+                      <span class="badge bg-purple">Capas</span>
+                      <span class="badge bg-purple">Wallpapers</span>
+                    </h5>
+                    <h5 class="card-title">Ferramentas de design:</h5>
+                    <h5>
+                      <span class="badge bg-purple">Adobe Photoshop</span>
+                      <span class="badge bg-purple">Invision</span>
+                      <span class="badge bg-purple">Adobe Illustrator</span>
+                      <span class="badge bg-purple">Adobe XD</span>
+                    </h5>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+
+            <!--div class="container">
+              <div class="row">
+                <div class="col-12 col-md-6 col-lg-4 mt-5 mb-5 module">
+                    <div class="card text-center bg-soft-transparency-dark animated fadeInDown">
+                      <div class="">
+                        <div class="card-picture">
+                          <img class="img-fluid rounded" src="https://i.imgur.com/nM1cqGJ.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="card-body text-light">
+                        <h4 class="card-title">Livros</h4>
+                        <p class="card-text">Teste</p>
+                        <div class="pb-3">
+                          <span class="badge bg-purple">Design</span>
+                        </div>
+                        <button type="button" class="btn btn-raised btn-outline-v2-light btn-block btn-sm">Primary</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 mt-5 mb-5 module">
+                    <div class="card text-center bg-soft-transparency-dark animated fadeInDown">
+                      <div class="">
+                        <div class="card-picture">
+                          <img class="img-fluid rounded" src="https://i.imgur.com/nM1cqGJ.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="card-body text-light">
+                        <h4 class="card-title">Livros</h4>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-raised btn-outline-v2-light btn-block btn-sm">Primary</button>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-md-6 col-lg-4 mt-5 mb-5 module">
+                    <div class="card text-center bg-soft-transparency-dark animated fadeInDown">
+                      <div class="">
+                        <div class="card-picture">
+                          <img class="img-fluid rounded" src="https://i.imgur.com/nM1cqGJ.png" alt="Card image cap">
+                        </div>
+                      </div>
+                      <div class="card-body text-light">
+                        <h4 class="card-title">Livros</h4>
+                        <p class="card-text"></p>
+                        <button type="button" class="btn btn-raised btn-outline-v2-light btn-block btn-sm">Primary</button>
+                      </div>
+                    </div>
+                  </div>
+
+              </div>
+
+            </div-->
+
+            <div class="container">
+              <div class="grid row">
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/4rerhe8.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/6VtLx0M.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/EpGfDh0.png?1" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/gGDZ3X4.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/j0FeHNg.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/86Be8nA.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/pMMHawl.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/KKQBWqa.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/7Ym6zbu.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/NnCqPa5.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <h5><span class="badge bg-orange">Coleção</span></h5>
+                      <h3 class="mb-0">Dragon Ball</h3>
+                      <p class="mb-1">This is a wider card.</p>
+                      <p class="">Nov 11</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/ILvw4HT.jpg" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/7kri46y.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/FG0D4h8.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/N1fca1h.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/hhkHuu0.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/xHfFTzv.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/vlT3MI1.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <p class="">This is a wider card.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/z8V94Q8.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <h5><span class="badge bg-orange">Coleção</span></h5>
+                      <h3 class="mb-0">Vitola Wars</h3>
+                      <p class=" mb-1">This is a wider card.</p>
+                      <p class="">Nov 11</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 grid-item my-3">
+                  <div class="masonry-area">
+                    <!-- Card image -->
+                    <div class="">
+                      <a href="#!" class="masonry-area-image with-hover-overlay">
+                        <img class="img-fluid" src="https://i.imgur.com/WH3nZum.png" alt="Card image cap">
+                      </a>
+                    </div>
+                    <div class="masonry-area-hover-text-header">
+                      <h5><span class="badge bg-orange">Coleção</span></h5>
+                      <h3 class="mb-0">GTA - Style</h3>
+                      <p class=" mb-1">This is a wider card.</p>
+                      <p class="">Nov 11</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
+
+
+  </body>
+</html>
