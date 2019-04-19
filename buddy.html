@@ -5,12 +5,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900">
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900"-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
     <link href="dist/css/bootstrap.css" rel="stylesheet">
-    <!--link rel="stylesheet" href="dist/css/blog.css"-->
+    <link rel="stylesheet" href="dist/css/blog.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
 
     <title>Hello, world!</title>
@@ -66,9 +66,15 @@
       .carousel-item{
 
       }
+
+      ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+        color: white !important;
+        opacity: 1; /* Firefox */
+      }
+
     </style>
   </head>
-  <body class="bg-custom">
+  <body class="bg-info">
 
     <div class="container">
       <!--header class="blog-header pt-4 pb-1">
@@ -87,16 +93,16 @@
         </div>
         <hr>
       </header-->
-      <!--header class="blog-header pt-3">
+      <header class="blog-header pt-3">
         <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-4 offset-4 text-center">
+          <div class="col-4">
             <a class="blog-header-logo text-dark" href="#">
-              <img src="nowbrand.png" alt="" class="img-fluid">
+              <h3 class="text-light"><strong>Sunny</strong></h3>
             </a>
           </div>
         </div>
-        <hr>
-      </header-->
+
+      </header>
     </div>
 
     <div class="container">
@@ -109,8 +115,8 @@
             <h1 class="text-light">Como você está se sentindo? Estou aqui para ajudar...</h1>
             <form>
               <div class="form-group">
-                <label for="exampleInputEmail1">Escreva Aqui como se sente</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escreva Aqui como você se sente...">
+                <!--label for="exampleInputEmail1">Escreva Aqui como se sente</label-->
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escreva Aqui como você se sente...">
                 <!--small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small-->
               </div>
               <!--button type="submit" class="btn btn-softpink">Analisar</button-->
