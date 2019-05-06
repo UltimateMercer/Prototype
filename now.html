@@ -64,114 +64,64 @@
         object-fit: cover;
       }
 
-      .carousel-item{
-
+      .main-featured{
+        background: no-repeat center center;
+        background-color: #868e96;
+        background-attachment: scroll;
+        position: relative;
+        background-size: cover;
+        min-height: 425px;
       }
+
+      .link{
+        color: inherit;
+      }
+
+      .link:hover{
+        text-decoration: none;
+        color: inherit;
+      }
+
+
     </style>
   </head>
   <body class="bg-soft">
 
-    <!--nav class="navbar navbar-expand sticky-top navbar-dark bg-transparency-dark py-md-3">
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-soft py-md-2 pb-2">
       <div class="container">
-        <a class="navbar-brand" href="">
-          <img src="blacklight_1new.png" class="img-fluid brand" alt="Responsive image">
+        <a class="navbar-brand" href="index.html">
+          <img src="dist/img/logo/last-blacklightbranddark.png" width="32" class="img-fluid brand" alt="Responsive image">
         </a>
         <div class="navbar-collapse justify-content-stretch">
-          <ul class="navbar-nav">
-
-          </ul>
           <ul class="navbar-nav ml-auto">
-
-                <li class="nav-item py-md-2">
-
-                </li>
+            <a class="navbar-brand" href="">
+              <img src="dist/img/logo/nowbrand.png" alt="" class="img-fluid brand">
+            </a>
           </ul>
         </div>
       </div>
-    </nav-->
+    </nav>
 
-    <div class="container">
-      <header class="blog-header pt-3 pb-1">
-        <div class="row flex-nowrap justify-content-between align-items-center">
-          <div class="col-6">
-            <a class="blog-header-logo" href="index.html">
-              <img src="dist/img/logo/last-blacklightbranddark.png" width="32" class="img-fluid brand" alt="Responsive image">
-            </a>
-          </div>
-          <div class="col-6 text-right">
-            <a class="blog-header-logo text-dark" href="#">
-              <img src="dist/img/logo/nowbrand.png" alt="" class="img-fluid">
-            </a>
-          </div>
-
-        </div>
-        <hr>
-      </header>
-    </div>
-
-    <div class="container">
-      <div class="pb-2">
-        <div id="myCarousel" class="carousel slide shadow-lg" data-ride="carousel">
-          <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-          </ol>
-          <div class="carousel-inner">
-            <div class="carousel-item active" data-interval="8000">
-              <img src="https://i.imgur.com/JWPo7Ta.jpg" class=" d-block w-100" alt="...">
-              <div class="container ">
-                <div class="carousel-caption text-left">
-                  <div class="">
-                    <h1 class="font-italic">Example headline.</h1>
-                    <p class="">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  </div>
-                  <p><a class="btn btn-sm btn-outline-light bg-soft-dark" href="#" role="button">Continue reading...</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-interval="8000">
-              <img src="https://i.imgur.com/LNUdGZa.jpg" class="d-block w-100" alt="...">
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <div class="">
-                    <h1 class="font-italic">Example headline.</h1>
-                    <p class="">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  </div>
-                  <p><a class="btn btn-sm btn-outline-light bg-soft-dark" href="#" role="button">Continue reading...</a></p>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item" data-interval="8000">
-              <img src="https://i.imgur.com/1k8By32.png" class="d-block w-100" alt="...">
-              <div class="container">
-                <div class="carousel-caption text-left">
-                  <div>
-                    <h1 class="font-italic">Example headline.</h1>
-                    <p class="">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-                  </div>
-                  <p><a class="btn btn-sm btn-outline-v2-light bg-soft-dark" href="#" role="button">Continue reading...</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+    <div class="container mt-5 pt-4">
+      <div class="card card-plain">
+        <div class="main-featured card-img-raised" style="background-image:url('https://i.imgur.com/17SZ9Lb.jpg')"></div>
+        <div class="card-body">
+          <strong class="d-inline-block mb-1 text-dark">Now</strong>
+          <h2 class="mb-0"><strong>Review: Vingadores Ultimato</strong></h2>
+          <p class="card-text mb-1">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <a href="Nowarticle1.html" class="stretched-link"></a>
+          <p class="mb-1">Por <strong>Josh</strong></p>
+          <div class="mb-1 text-muted">25 de Abril </div>
         </div>
       </div>
     </div>
+
 
     <div class="container">
       <div class="row mb-2">
         <div class="col-12 mt-4">
           <h2 class="font-italic">Destaques</h2>
-          <hr>
+
         </div>
 
         <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 mb-3">
@@ -182,11 +132,11 @@
                 <div class=""></div>
               </a>
             <div class="card-body">
-              <strong class="d-inline-block mb-1 text-pink">Redlight</strong>
-              <h3 class="mb-0">Card title</h3>
+              <h3 class="mb-1"><strong>Card title</strong></h3>
+              <p class="card-text mb-1">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <p class="mb-1"><a href="" class="text-dark">Alex Mercer</a> em <strong class="d-inline-block mb-0 text-pink">Redlight</strong></p>
               <div class="mb-1 text-muted">Nov 11</div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="article.html" class="stretched-link">Continue reading</a>
+              <a href="article.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -201,48 +151,10 @@
 
             <div class="card-body">
               <strong class="d-inline-block mb-1 text-primary">World</strong>
-              <h3 class="mb-0">Card title</h3>
+              <h3 class="mb-0"><strong>Card title</strong></h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 mb-3">
-          <div class="card card-plain">
-            <!-- Card image -->
-
-              <img class="card-img-top card-img-raised" src="https://i.imgur.com/mQjx5OZ.png" alt="Card image cap">
-              <a href="#!">
-                <div class=""></div>
-              </a>
-
-            <div class="card-body">
-              <strong class="d-inline-block mb-1 text-pink">Redlight</strong>
-              <h3 class="mb-0">Card title</h3>
-              <div class="mb-1 text-muted">Nov 11</div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="article.html" class="stretched-link">Continue reading</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 mb-3">
-          <div class="card card-plain">
-            <!-- Card image -->
-
-              <img class="card-img-top card-img-raised" src="https://i.imgur.com/hzBaCS0.png" alt="Card image cap">
-              <a href="#!">
-                <div class=""></div>
-              </a>
-
-
-            <div class="card-body">
-              <strong class="d-inline-block mb-1 text-primary">World</strong>
-              <h3 class="mb-0">Card title</h3>
-              <div class="mb-1 text-muted">Nov 11</div>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+              <a href="#" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -258,10 +170,10 @@
 
             <div class="card-body">
               <strong class="d-inline-block mb-1 text-pink">Redlight</strong>
-              <h3 class="mb-0">Card title</h3>
+              <h3 class="mb-0"><strong>Card title</strong></h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="article.html" class="stretched-link">Continue reading</a>
+              <a href="article.html" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -277,10 +189,48 @@
 
             <div class="card-body">
               <strong class="d-inline-block mb-1 text-primary">World</strong>
-              <h3 class="mb-0">Card title</h3>
+              <h3 class="mb-0"><strong>Card title</strong></h3>
               <div class="mb-1 text-muted">Nov 11</div>
               <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <a href="#" class="stretched-link">Continue reading</a>
+              <a href="#" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 mb-3">
+          <div class="card card-plain">
+            <!-- Card image -->
+
+              <img class="card-img-top card-img-raised" src="https://i.imgur.com/mQjx5OZ.png" alt="Card image cap">
+              <a href="#!">
+                <div class=""></div>
+              </a>
+
+            <div class="card-body">
+              <strong class="d-inline-block mb-1 text-pink">Redlight</strong>
+              <h3 class="mb-0"><strong>Card title</strong></h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="article.html" class="stretched-link"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 mb-3">
+          <div class="card card-plain">
+            <!-- Card image -->
+
+              <img class="card-img-top card-img-raised" src="https://i.imgur.com/hzBaCS0.png" alt="Card image cap">
+              <a href="#!">
+                <div class=""></div>
+              </a>
+
+
+            <div class="card-body">
+              <strong class="d-inline-block mb-1 text-primary">World</strong>
+              <h3 class="mb-0"><strong>Card title</strong></h3>
+              <div class="mb-1 text-muted">Nov 11</div>
+              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+              <a href="#" class="stretched-link"></a>
             </div>
           </div>
         </div>
@@ -333,7 +283,7 @@
                   <img src="https://i.imgur.com/mQjx5OZ.png" class="card-img" alt="...">
                   <div class="mask pattern-1"></div>
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title"><strong>Card title</strong></h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text">Last updated 3 mins ago</p>
                   </div>
@@ -346,7 +296,7 @@
                   <img src="https://i.imgur.com/hzBaCS0.png" class="card-img" alt="...">
                   <div class="mask pattern-1 "></div>
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title"><strong>Card title</strong></h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text">Last updated 3 mins ago</p>
                   </div>
@@ -359,7 +309,7 @@
                   <img src="https://i.imgur.com/mQjx5OZ.png" class="card-img" alt="...">
                   <div class="mask pattern-1 rgba-pink-medium"></div>
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title"><strong>Card title</strong></h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text">Last updated 3 mins ago</p>
                   </div>
@@ -372,7 +322,7 @@
                   <img src="https://i.imgur.com/hzBaCS0.png" class="card-img" alt="...">
                   <div class="mask pattern-1 "></div>
                   <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
+                    <h5 class="card-title"><strong>Card title</strong></h5>
                     <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                     <p class="card-text">Last updated 3 mins ago</p>
                   </div>

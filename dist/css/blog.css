@@ -96,7 +96,9 @@ h1, h2, h3, h4, h5, h6 {
  * Blog posts
  */
 .blog-post {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
+  font-size: 1.25rem;
+  line-height: 1.58;
 }
 .blog-post-title {
   margin-bottom: .25rem;

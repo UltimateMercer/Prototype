@@ -1,0 +1,43 @@
+.content-bottom{
+  position: absolute;
+  bottom: 10px;
+}
+
+.full-background{
+  background-position: 50%;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+
+}
+
+
+
+.full{
+
+}
+
+.card-blog-post{
+  min-height: 550px;
+}
+
+.card-full-image{
+  background-position: 50%;
+  background-size: cover;
+  transition: transform .2s;
+}
+
+.card-full-image .card-body{
+  position: relative;
+  z-index: 2;
+}
+
+.card-full-image:hover{
+  transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+}
+
+.hovering{
+
+}
