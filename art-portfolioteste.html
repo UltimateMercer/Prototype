@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+
+    html{
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    body{
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+
+    .bg-transparency-dark{
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+      .img-board{
+        max-width: 12.5rem;
+        height: auto;
+      }
+
+      .portfolium-header{
+        background-color: #070707;
+      }
+
+      .portfolium-block{
+        background-color: #070707;
+      }
+
+      .text-box{
+        background-color: #EAEAEA;
+      }
+
+      .news{
+        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
+        background-size: cover;
+        /*filter: invert(1) hue-rotate(210deg);*/
+      }
+
+      .card-header{
+        border-radius: 0 !important;
+      }
+
+      .card-sizing{
+
+      }
+
+      .come-in {
+        transform: translateY(150px);
+        animation: come-in 0.8s ease forwards;
+      }
+      .come-in:nth-child(odd) {
+        animation-duration: 0.6s;
+      }
+      .already-visible {
+        transform: translateY(0);
+        animation: none;
+      }
+
+      @keyframes come-in {
+        to { transform: translateY(0); }
+      }
+
+      .card-column{
+        text-align: left;
+        column-count: 4;
+        column-gap: 8px; }
+        @media screen and (max-width: 1200px) {
+          section {
+            column-count: 2; } }
+        @media screen and (max-width: 800px) {
+          section {
+            column-count: 1; } }
+        section > .card {
+          margin-bottom: 8px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+
+        #section{
+          padding: 2.5%;
+        }
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-dark py-md-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="dist/img/logo/last-blacklightbrand2.png" width="32" class="img-fluid brand" alt="Responsive image">
+        </a>
+        <div class="navbar-collapse justify-content-stretch">
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-brand" href="">
+              <img src="dist/img/logo/portfolium_logo.png" alt="" class="img-fluid brand">
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container-fluid p-0">
+        <div id="" class="profile-section pt-5">
+          <div class="user-info ">
+            <img class="img-fluid d-block mx-auto shadow-image rounded mt-5" width="200" src="dist/img/logo/emmaphotobase.jpg" title="source: imgur.com" />
+            <h1 class="text-center text-dark mt-3 mb-2"><strong>ULTIMATE MERCER</strong></h1>
+            <div class="mt-2 mx-5">
+              <p>I am a creative illustrator and graphic designer with more than 10 years of experience.</p>
+              <p>Originally from Toronto, currently based in London.</p>
+            </div>
+          </div>
+        </div>
+        <div id="section" class="main-info bg-pink">
+          <div class="mt-5">
+            <p>I am a creative illustrator and graphic designer with more than 10 years of experience.</p>
+            <p>Originally from Toronto, currently based in London.</p>
+          </div>
+          <div class="card bg-soft-transparency-light my-4 mx-2">
+            <h5 class="card-header bg-info text-light"><strong>Desenvolvedor Front-end</strong></h5>
+            <div class="card-body">
+              <h5 class="card-title">Linguagens conhecidas:</h5>
+              <h5>
+                <span class="badge bg-info my-1">HTML</span>
+                <span class="badge bg-info my-1">CSS</span>
+                <span class="badge bg-info my-1">SASS/SCSS</span>
+                <span class="badge bg-info my-1">PHP</span>
+              </h5>
+              <h5 class="card-title">Ferramentas de desenvolvimento:</h5>
+              <h5>
+                <span class="badge bg-info my-1">Atom</span>
+                <span class="badge bg-info my-1">Sublime</span>
+                <span class="badge bg-info my-1">Bootstrap</span>
+                <span class="badge bg-info my-1">jQuery</span>
+                <span class="badge bg-info my-1">GitHub</span>
+                <span class="badge bg-info my-1">GitKraken</span>
+                <span class="badge bg-info my-1">NodeJS</span>
+                <span class="badge bg-info my-1">NPM</span>
+              </h5>
+            </div>
+          </div>
+
+          <div class="card bg-soft-transparency-light my-4 mx-2">
+            <h5 class="card-header bg-purple text-light"><strong>Design</strong></h5>
+            <div class="card-body">
+              <h5 class="card-title">O que eu gosto de desenvolver:</h5>
+              <h5>
+                <span class="badge bg-purple my-1">Websites</span>
+                <span class="badge bg-purple my-1">Posters</span>
+                <span class="badge bg-purple my-1">Capas</span>
+                <span class="badge bg-purple my-1">Wallpapers</span>
+              </h5>
+              <h5 class="card-title">Ferramentas de design:</h5>
+              <h5>
+                <span class="badge bg-purple my-1">Adobe Photoshop</span>
+                <span class="badge bg-purple my-1">Invision</span>
+                <span class="badge bg-purple my-1">Adobe Illustrator</span>
+                <span class="badge bg-purple my-1">Adobe XD</span>
+              </h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      var elements = $(".profile-section > .user-info *");
+
+      console.log(elements);
+
+      for(let i = 0; i < elements.length; i++){
+        setTimeout(function(){
+          $(elements[i].tagName).addClass("bs");
+        }, (400 * i) - 90 * i );
+      }
+
+      setTimeout(function(){
+        $(".main-info").addClass("active");
+      }, 1900);
+
+    });
+    </script>
+
+  </body>
+</html>

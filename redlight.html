@@ -90,8 +90,10 @@
 
       }
 
-      .card-blog-post{
+      .card-blog-post .card-body{
         min-height: 550px;
+        position: relative;
+        z-index: 2;
       }
 
       .card-full-image{
@@ -108,6 +110,7 @@
       .card-full-image:hover{
         transform: scale(1.07);
         -webkit-transform: scale(1.07);
+        z-index: 2;
       }
 
       .hovering{
@@ -115,17 +118,18 @@
       }
     </style>
   </head>
-  <body class="bg-darkest-bluegrey">
+  <body class="bg-soft">
 
-    <nav class="navbar navbar-expand fixed-top navbar-dark bg-darkest-bluegrey py-md-2">
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-pink py-md-2">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="dist/img/logo/last-blacklightbrand2.png" width="32" class="img-fluid brand" alt="Responsive image">
         </a>
+
         <div class="navbar-collapse justify-content-stretch">
           <ul class="navbar-nav ml-auto">
-            <a class="navbar-brand" href="#">
-              <img src="dist/img/logo/nerdstation_logo.png" alt="" class="img-fluid brand">
+            <a class="navbar-brand" href="">
+              <img src="dist/img/logo/redlight_1.png" alt="" class="img-fluid brand">
             </a>
           </ul>
         </div>
@@ -133,16 +137,16 @@
     </nav>
 
     <div class="view">
-      <div class="mask pattern-1 rgba-black-slight"></div>
+      <!--div class="mask rgba-pink-light"></div-->
 
-    <div class="container">
+    <div class="container-fluid p-0">
       <div class="row no-gutters mt-5 mb-2">
         <div class="col-12 text-center text-light mt-5">
           <h2 class="font-italic display-5">Destaques</h2>
         </div>
 
-        <div class="col-lg-4 col-md-6 col-12">
-          <div class="card card-blog-post card-full-image view my-3">
+        <div class="col-lg-8 col-md-6 col-12">
+          <div class="card card-blog-post  view">
             <div class="full-background" style="background-image: url('https://i.imgur.com/Y4IBCVN.png');"></div>
             <div class="card-body">
               <div class="content-bottom">
@@ -151,14 +155,12 @@
               </div>
               <a href="articleNerd.html" class="stretched-link"></a>
             </div>
-
             <div class="mask rgba-black-light "></div>
-
           </div>
         </div>
 
         <div class="col-lg-4 col-md-6 col-12">
-          <div class="card card-blog-post card-full-image view my-3">
+          <div class="card card-blog-post view">
             <div class="full-background" style="background-image: url('https://i.imgur.com/ZUZoGGT.jpg');"></div>
             <div class="card-body">
               <div class="content-bottom">
@@ -170,8 +172,8 @@
         </div>
 
         <div class="col-lg-4 col-md-6 col-12">
-          <div class="card card-blog-post card-full-image view my-3">
-            <div class="full-background" style="background-image: url('https://i.imgur.com/Y4IBCVN.png');"></div>
+          <div class="card card-blog-post view">
+            <div class="full-background" style="background-image: url('https://i.imgur.com/gpEjgde.png');"></div>
             <div class="card-body">
               <div class="content-bottom">
                 <h3 class="card-title text-white">Card title</h3>
@@ -181,51 +183,40 @@
           </div>
         </div>
 
-
-
-
-
-        <div class="col-lg-6 col-md-6 col-12">
-          <div class="card bg-dark text-white my-3">
-            <div class="view">
-              <img src="https://i.imgur.com/Y4IBCVN.png" class="card-img" alt="...">
-              <div class="mask pattern-5 "></div>
-              <div class="card-img-overlay hovering">
-                <h3 class="card-title">Card title</h3>
+        <div class="col-lg-8 col-md-6 col-12">
+          <div class="card card-blog-post view">
+            <div class="full-background" style="background-image: url('https://i.imgur.com/aFm7mOf.jpg');"></div>
+            <div class="card-body">
+              <div class="content-bottom">
+                <h3 class="card-title text-white">Card title</h3>
               </div>
             </div>
+            <div class="mask rgba-black-light"></div>
           </div>
         </div>
 
-        <div class="col-lg-6 col-md-6 col-12 ">
-          <div class="card bg-dark text-white my-3">
-            <div class="view">
-              <img src="https://i.imgur.com/aFm7mOf.jpg" class="card-img" alt="...">
-              <div class="mask pattern-5"></div>
-              <div class="card-img-overlay">
-                <h3 class="card-title">Card title</h3>
+        <div class="col-lg-6 col-md-6 col-12">
+          <div class="card card-blog-post view">
+            <div class="full-background" style="background-image: url('https://i.imgur.com/En0e9yl.jpg');"></div>
+            <div class="card-body">
+              <div class="content-bottom">
+                <h3 class="card-title text-white">Card title</h3>
               </div>
             </div>
+            <div class="mask rgba-black-light"></div>
           </div>
-
         </div>
 
         <div class="col-lg-6 col-md-6 col-12">
-          <div class="card bg-dark text-white my-3">
-            <div class="view">
-              <img src="https://i.imgur.com/En0e9yl.jpg" class="card-img full-background" alt="...">
-              <div class="mask pattern-5 "></div>
-              <div class="card-img-overlay">
-                <div class="content-bottom">
-                  <h3 class="card-title">Card title</h3>
-                </div>
-
+          <div class="card card-blog-post view">
+            <div class="full-background" style="background-image: url('https://i.imgur.com/En0e9yl.jpg');"></div>
+            <div class="card-body">
+              <div class="content-bottom">
+                <h3 class="card-title text-white">Card title</h3>
               </div>
             </div>
+            <div class="mask rgba-black-light"></div>
           </div>
-
-
-
         </div>
 
         <div class="col-lg-6 col-md-6 col-12 ">
@@ -238,7 +229,6 @@
               </div>
             </div>
           </div>
-
         </div>
 
         <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 my-4">

@@ -33,22 +33,23 @@
 
       .header{
         height: 100vh;
-        background-image: url('https://i.imgur.com/kdHWREC.png'), url('https://i.imgur.com/8KoJOxg.png');
+        /*background-image: url('https://i.imgur.com/kdHWREC.png'), url('https://i.imgur.com/8KoJOxg.png');*/
+        /*background-image: url('https://i.imgur.com/8KoJOxg.png');
         background-color: #070707;
         background-size: cover;
-        background-position: center, bottom;
+        background-position:  bottom;*/
       }
-      .mote{
-        background-image: url('https://i.imgur.com/8KoJOxg.png');
+      .motes{
+        /*background-image: url('https://i.imgur.com/8KoJOxg.png');
         background-color: #070707;
         background-size: cover;
-        background-position: top;
+        background-position: top;*/
       }
       .channel{
-        background-image: url('https://i.imgur.com/CFqCqxw.png'), url('https://i.imgur.com/8KoJOxg.png');
+        background-image: url('https://i.imgur.com/CFqCqxw.png');
         background-size: cover;
-        background-position: top, center;
-        background-color: #070707;
+        background-position: top;
+        /*background-color: #070707*/;
       }
 
       .news{
@@ -174,7 +175,9 @@
 
     </style>
   </head>
-  <body>
+  <body class="star-container">
+    <div class="stars-container"></div>
+    <div class=""></div>
 
     <div class="container-fluid header">
       <div class="row">
@@ -182,18 +185,42 @@
           <div class="pt-5">
             <img src="dist/img/logo/last-blacklight-3d2.png" alt=""  class="img-fluid d-block mx-auto">
           </div>
+          <div>
+
+          <!-- Black-Hole -->
+          <svg width="0" height="0" >
+           <filter id="gooey-black-hole" >
+                <feGaussianBlur in="SourceGraphic" stdDeviation="20" result="blur"/>
+                <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 50 -16" result="goo" />
+            </filter>
+          </svg>
+          <div class="black-hole d-block mx-auto" class="">
+            <ul class="gooey-container">
+              <li class="bubble"></li>
+              <li class="bubble"></li>
+              <li class="bubble"></li>
+              <li class="bubble"></li>
+              <li class="bubble"></li>
+              <li class="bubble"></li>
+            </ul>
+          </div>
+          <!--/Black-Hole -->
+
+
+          </div>
         </div>
       </div>
     </div>
 
-    <div class="container-fluid mote">
+
+    <div class="container-fluid">
       <div class="row">
         <div class="col-12">
           <div class="container">
             <div class="">
               <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
-                <h2 class="text-center text-light description py-1">
-                  Bem vindos, a um multiverso de conexões, conteúdos e muitas possibilidades para todos.
+                <h2 class="text-center text-light description py-2">
+                  Bem vindos a um multiverso de conexões, conteúdos e muitas possibilidades para todos.
                 </h2>
               </div>
             </div>
@@ -208,7 +235,7 @@
             <div class="container">
               <div class="mt-3 mb-3">
                 <div class="col-10 offset-1">
-                  <h2 class="text-center text-light mt-1"> <strong>Canais de destaque</strong></h2>
+                  <h2 class="text-center text-light  mb-2"> <strong>Canais de destaque</strong></h2>
                   <div class="row">
                     <div class="col-lg-3 col-md-4 col-6 mt-3 mb-3">
                       <a href="now.html">
@@ -305,7 +332,7 @@
 
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12 news">
+        <div class="col-12 newss">
           <div class="container">
             <div class="row my-3">
               <div class="col-lg-8 offset-lg-2 col-md-10 offset-md-1 col-12">
