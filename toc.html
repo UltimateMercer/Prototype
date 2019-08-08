@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+
+
+    .bg-transparency-dark{
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+      .img-board{
+        max-width: 12.5rem;
+        height: auto;
+      }
+
+      .portfolium-header{
+        background-color: #070707;
+      }
+
+      .portfolium-block{
+        background-color: #070707;
+      }
+
+      .text-box{
+        background-color: #EAEAEA;
+      }
+
+      .news{
+        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
+        background-size: cover;
+        /*filter: invert(1) hue-rotate(210deg);*/
+      }
+
+      .card-header{
+        border-radius: 0 !important;
+      }
+
+      .card-sizing{
+
+      }
+
+      .full-background{
+        background-position: 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+      }
+
+
+
+      .full-background img{
+        transition: transform .2s;
+      }
+
+      .full-background:hover img{
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+      }
+
+      .card-blog-post{
+        min-height: 30rem;
+      }
+
+      .card-full-image{
+        background-position: 50%;
+        background-size: cover;
+        transition: transform .2s;
+
+      }
+
+      .card-full-image .card-body{
+        position: relative;
+        z-index: 2;
+
+      }
+
+      .card-full-image:hover img{
+        transform: scale(1.03);
+        -webkit-transform: scale(1.03);
+      }
+
+      .content-bottom{
+        position: absolute;
+        bottom: 10px;
+      }
+
+      .card-hover-zoom{
+        /*height: 300px;*/ /* [1.1] Set it as per your need */
+        overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+      }
+
+      /* [2] Transition property for smooth transformation of images */
+      .card-hover-zoom img {
+        transition: transform .5s ease;
+      }
+
+      /* [3] Finally, transforming the image when container gets hovered */
+      .card-hover-zoom:hover img {
+        transform: scale(1.5);
+      }
+
+      .card-body-2{
+        padding: 1rem 0;
+      }
+
+    </style>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-purple py-md-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="dist/img/logo/last-blacklightbrand2.png" width="32" class="img-fluid brand" alt="Responsive image">
+        </a>
+        <div class="navbar-collapse justify-content-stretch">
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-brand" href="">
+              <strong>TOC</strong>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+
+
+    <div class="container-fluid">
+        <div class="row">
+          <div class="col-12">
+            <div class="container shadow-lg mb-5">
+              <div class="px-5 py-5">
+                <div class="mt-5 mb-5">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <img class="img-fluid mx-auto d-block shadow-image rounded-circle" width="250" src="dist/img/logo/emma8photo5-2icon.jpg" title="source: imgur.com" />
+                    </div>
+                    <div class="col-lg-8">
+                      <h2 class="text-dark mt-3 mb-3"><strong>Ultimate Mercer</strong></h2>
+                      <p>I am a creative illustrator and graphic designer with more than 10 years of experience.</p>
+                      <h5>Insignias</h5>
+                      <h5>
+                        <span class="badge bg-info">Novato</span>
+                        <span class="badge bg-dark text-orange">Colecionador Ultimate</span>
+                      </h5>
+                      <h5>Número de coleções</h5>
+                      <h1>
+                        <span class="badge bg-purple">25</span>
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card card-blog-post card-full-image view my-3">
+                    <div class="full-background" style="background-image: url('https://i.imgur.com/Y4IBCVN.png');"></div>
+                    <div class="card-body">
+                      <div class="content-bottom">
+                        <h3 class="card-title text-white">Card title</h3>
+
+                      </div>
+                      <a href="articleNerd.html" class="stretched-link"></a>
+                    </div>
+
+                    <div class="mask rgba-black-light "></div>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card card-blog-post card-full-image view my-3">
+                    <div class="full-background" style="background-image: url('https://i.imgur.com/ZUZoGGT.jpg');"></div>
+                    <div class="card-body">
+                      <div class="content-bottom">
+                        <h3 class="card-title text-white">Card title</h3>
+                      </div>
+                    </div>
+                    <div class="mask rgba-black-light "></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card card-blog-post card-full-image view my-3">
+                    <div class="full-background" style="background-image: url('https://i.imgur.com/Y4IBCVN.png');"></div>
+                    <div class="card-body">
+                      <div class="content-bottom">
+                        <h3 class="card-title text-white">Card title</h3>
+                      </div>
+                    </div>
+                    <div class="mask rgba-black-light"></div>
+                  </div>
+                </div>
+
+              </div-->
+
+              <div class="row">
+                <div class="col-12">
+                  <h3>Coleções</h3>
+                  <hr>
+                </div>
+                <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 my-4">
+                  <div class="card bg-soft-transparency-light text-dark">
+                    <!-- Card image -->
+                    <div class="card-picture narrow">
+                      <div class="view">
+                        <img class="card-img-top card-img-fit" src="https://i.imgur.com/Y1huHQr.jpg" alt="Card image cap">
+                        <a href="#!">
+                          <div class="mask pattern-1 rgba-blue-slight"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="mb-0">Card title</h3>
+                      <a href="article.html" class="stretched-link"></a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 my-4">
+                  <div class="card bg-soft-transparency-light text-dark">
+                    <!-- Card image -->
+                    <div class="card-picture narrow">
+                      <div class="view">
+                        <img class="card-img-top card-img-fit" src="https://i.imgur.com/wM12uiG.jpg" alt="Card image cap">
+                        <a href="#!">
+                          <div class="mask pattern-1 rgba-blue-slight"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="mb-0">Card title</h3>
+                      <a href="article.html" class="stretched-link"></a>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-10 offset-lg-0 offset-md-0 offset-1 my-4">
+                  <div class="card bg-soft-transparency-light text-dark">
+                    <!-- Card image -->
+                    <div class="card-picture narrow">
+                      <div class="view">
+                        <img class="card-img-top card-img-fit" src="https://i.imgur.com/gpEjgde.png" alt="Card image cap">
+                        <a href="#!">
+                          <div class="mask pattern-1 rgba-blue-slight"></div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <h3 class="mb-0">Card title</h3>
+                      <a href="article.html" class="stretched-link"></a>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-12">
+                  <h3>Coleções</h3>
+                  <hr>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card card-blog-post card-full-image view my-3">
+                    <div class="full-background" style="background-image: url('https://i.imgur.com/Y4IBCVN.png');"></div>
+                    <div class="card-body">
+                      <div class="content-bottom">
+                        <h3 class="card-title text-white">Card title</h3>
+                      </div>
+                      <a href="articleNerd.html" class="stretched-link"></a>
+                    </div>
+
+                    <div class="mask rgba-black-light "></div>
+
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card card-blog-post card-full-image view my-3">
+                    <div class="full-background" style="background-image: url('https://i.imgur.com/ZUZoGGT.jpg');"></div>
+                    <div class="card-body">
+                      <div class="content-bottom">
+                        <h3 class="card-title text-white">Card title</h3>
+                      </div>
+                    </div>
+                    <div class="mask rgba-black-light "></div>
+                  </div>
+                </div>
+
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card card-blog-post card-full-image view my-3">
+                    <div class="full-background" style="background-image: url('https://i.imgur.com/Y4IBCVN.png');"></div>
+                    <div class="card-body">
+                      <div class="content-bottom">
+                        <h3 class="card-title text-white">Card title</h3>
+                      </div>
+                    </div>
+                    <div class="mask rgba-black-light"></div>
+                  </div>
+                </div>
+
+                <!--div class="col-lg-4 col-md-6 col-12">
+                  <div class="card-hover-zoom ">
+                    <img src="https://i.imgur.com/Y4IBCVN.png" alt="" class="full-background img-fluid">
+                  </div>
+                </div-->
+
+              </div>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
+
+
+  </body>
+</html>
