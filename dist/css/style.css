@@ -25,7 +25,9 @@
 .card-full-image{
   background-position: 50%;
   background-size: cover;
+  transition: -webkit-transform .2s;
   transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
 }
 
 .card-full-image .card-body{
@@ -45,18 +47,40 @@
 
 
 
-@keyframes plasma {
+@-webkit-keyframes plasma {
   0% {
+    -webkit-transform: scale(6) translate3d(20px, 0, 0);
     transform: scale(6) translate3d(20px, 0, 0);
   }
   50% {
+    -webkit-transform: scale(1) translate3d(-60px, 0, 0);
     transform: scale(1) translate3d(-60px, 0, 0);
   }
   100% {
+    -webkit-transform: scale(6) translate3d(20px, 0, 0);
+    transform: scale(6) translate3d(20px, 0, 0);
+  }
+}
+
+
+
+
+@keyframes plasma {
+  0% {
+    -webkit-transform: scale(6) translate3d(20px, 0, 0);
+    transform: scale(6) translate3d(20px, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(1) translate3d(-60px, 0, 0);
+    transform: scale(1) translate3d(-60px, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(6) translate3d(20px, 0, 0);
     transform: scale(6) translate3d(20px, 0, 0);
   }
 }
 .plasma {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 20;
   position: relative;
@@ -67,10 +91,12 @@
   overflow: hidden;
 }
 .plasma .gooey-container {
+  -webkit-filter: url(#gooey-plasma);
   filter: url(#gooey-plasma);
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
@@ -95,66 +121,110 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
+  -webkit-transform: scale(6) translate3d(20px, 0, 0);
   transform: scale(6) translate3d(20px, 0, 0);
   box-shadow: 0 0 15px 0 #4100ff inset, 0 0 10px 0 #4100ff inset;
 }
 .plasma .gooey-container .bubble:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(60deg);
   transform: translate(-50%, -50%) rotate(60deg);
 }
 .plasma .gooey-container .bubble:nth-child(1):before {
+  -webkit-animation: plasma 3.5s linear 0.25s infinite;
   animation: plasma 3.5s linear 0.25s infinite;
 }
 .plasma .gooey-container .bubble:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
   transform: translate(-50%, -50%) rotate(120deg);
 }
 .plasma .gooey-container .bubble:nth-child(2):before {
+  -webkit-animation: plasma 4s linear 0.5s infinite;
   animation: plasma 4s linear 0.5s infinite;
 }
 .plasma .gooey-container .bubble:nth-child(3) {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
   transform: translate(-50%, -50%) rotate(180deg);
 }
 .plasma .gooey-container .bubble:nth-child(3):before {
+  -webkit-animation: plasma 4.5s linear 0.75s infinite;
   animation: plasma 4.5s linear 0.75s infinite;
 }
 .plasma .gooey-container .bubble:nth-child(4) {
+  -webkit-transform: translate(-50%, -50%) rotate(240deg);
   transform: translate(-50%, -50%) rotate(240deg);
 }
 .plasma .gooey-container .bubble:nth-child(4):before {
+  -webkit-animation: plasma 5s linear 1s infinite;
   animation: plasma 5s linear 1s infinite;
 }
 .plasma .gooey-container .bubble:nth-child(5) {
+  -webkit-transform: translate(-50%, -50%) rotate(300deg);
   transform: translate(-50%, -50%) rotate(300deg);
 }
 .plasma .gooey-container .bubble:nth-child(5):before {
+  -webkit-animation: plasma 5.5s linear 1.25s infinite;
   animation: plasma 5.5s linear 1.25s infinite;
 }
 .plasma .gooey-container .bubble:nth-child(6) {
+  -webkit-transform: translate(-50%, -50%) rotate(360deg);
   transform: translate(-50%, -50%) rotate(360deg);
 }
 .plasma .gooey-container .bubble:nth-child(6):before {
+  -webkit-animation: plasma 6s linear 1.5s infinite;
   animation: plasma 6s linear 1.5s infinite;
+}
+
+@-webkit-keyframes plasma-2 {
+  0% {
+    -webkit-transform: scale(1) translate3d(60px, 0, 0);
+    transform: scale(1) translate3d(60px, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(2) translate3d(-60px, 0, 0);
+    transform: scale(2) translate3d(-60px, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate3d(60px, 0, 0);
+    transform: scale(1) translate3d(60px, 0, 0);
+  }
 }
 
 @keyframes plasma-2 {
   0% {
+    -webkit-transform: scale(1) translate3d(60px, 0, 0);
     transform: scale(1) translate3d(60px, 0, 0);
   }
   50% {
+    -webkit-transform: scale(2) translate3d(-60px, 0, 0);
     transform: scale(2) translate3d(-60px, 0, 0);
   }
   100% {
+    -webkit-transform: scale(1) translate3d(60px, 0, 0);
     transform: scale(1) translate3d(60px, 0, 0);
+  }
+}
+@-webkit-keyframes plasma-2-rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
+    transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 @keyframes plasma-2-rotate {
   0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg);
     transform: translate(-50%, -50%) rotate(0deg);
   }
   100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg);
     transform: translate(-50%, -50%) rotate(360deg);
   }
 }
 .plasma-2 {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 20;
   position: relative;
@@ -170,13 +240,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-filter: url(#gooey-plasma-2);
   filter: url(#gooey-plasma-2);
   width: 300px;
   height: 300px;
   padding: 0;
   margin: 0;
   box-shadow: 0 0 0 20px #4100ff inset;
+  -webkit-animation: plasma-2-rotate 5s linear infinite;
   animation: plasma-2-rotate 5s linear infinite;
 }
 .plasma-2 .gooey-container .bubble {
@@ -194,73 +267,130 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  -webkit-transform: scale(1) translate3d(75px, 0, 0);
   transform: scale(1) translate3d(75px, 0, 0);
   box-shadow: 0 0 10px 5px #0000ff inset, 0 0 10px 0 #0000ff inset;
 }
 .plasma-2 .gooey-container .bubble:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(60deg);
   transform: translate(-50%, -50%) rotate(60deg);
 }
 .plasma-2 .gooey-container .bubble:nth-child(1):before {
+  -webkit-animation: plasma-2 2.5s ease 0.5s infinite;
   animation: plasma-2 2.5s ease 0.5s infinite;
 }
 .plasma-2 .gooey-container .bubble:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
   transform: translate(-50%, -50%) rotate(120deg);
 }
 .plasma-2 .gooey-container .bubble:nth-child(2):before {
+  -webkit-animation: plasma-2 5s ease 0.25s infinite;
   animation: plasma-2 5s ease 0.25s infinite;
 }
 .plasma-2 .gooey-container .bubble:nth-child(3) {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
   transform: translate(-50%, -50%) rotate(180deg);
 }
 .plasma-2 .gooey-container .bubble:nth-child(3):before {
+  -webkit-animation: plasma-2 7.5s ease 0.1666666667s infinite;
   animation: plasma-2 7.5s ease 0.1666666667s infinite;
 }
 .plasma-2 .gooey-container .bubble:nth-child(4) {
+  -webkit-transform: translate(-50%, -50%) rotate(240deg);
   transform: translate(-50%, -50%) rotate(240deg);
 }
 .plasma-2 .gooey-container .bubble:nth-child(4):before {
+  -webkit-animation: plasma-2 10s ease 0.125s infinite;
   animation: plasma-2 10s ease 0.125s infinite;
 }
 .plasma-2 .gooey-container .bubble:nth-child(5) {
+  -webkit-transform: translate(-50%, -50%) rotate(300deg);
   transform: translate(-50%, -50%) rotate(300deg);
 }
 .plasma-2 .gooey-container .bubble:nth-child(5):before {
+  -webkit-animation: plasma-2 12.5s ease 0.1s infinite;
   animation: plasma-2 12.5s ease 0.1s infinite;
 }
 .plasma-2 .gooey-container .bubble:nth-child(6) {
+  -webkit-transform: translate(-50%, -50%) rotate(360deg);
   transform: translate(-50%, -50%) rotate(360deg);
 }
 .plasma-2 .gooey-container .bubble:nth-child(6):before {
+  -webkit-animation: plasma-2 15s ease 0.0833333333s infinite;
   animation: plasma-2 15s ease 0.0833333333s infinite;
+}
+
+@-webkit-keyframes fill-level {
+  0% {
+    -webkit-transform: translate3d(-413px, -53px, 0) rotate(45deg);
+    transform: translate3d(-413px, -53px, 0) rotate(45deg);
+  }
+  15% {
+    -webkit-transform: translate3d(-393px, -73px, 0) rotate(25deg);
+    transform: translate3d(-393px, -73px, 0) rotate(25deg);
+  }
+  30% {
+    -webkit-transform: translate3d(-343px, -123px, 0) rotate(45deg);
+    transform: translate3d(-343px, -123px, 0) rotate(45deg);
+  }
+  45% {
+    -webkit-transform: translate3d(-283px, -183px, 0) rotate(55deg);
+    transform: translate3d(-283px, -183px, 0) rotate(55deg);
+  }
+  60% {
+    -webkit-transform: translate3d(-263px, -203px, 0) rotate(45deg);
+    transform: translate3d(-263px, -203px, 0) rotate(45deg);
+  }
+  75% {
+    -webkit-transform: translate3d(-243px, -223px, 0) rotate(35deg);
+    transform: translate3d(-243px, -223px, 0) rotate(35deg);
+  }
+  90% {
+    -webkit-transform: translate3d(-223px, -243px, 0) rotate(45deg);
+    transform: translate3d(-223px, -243px, 0) rotate(45deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-203px, -263px, 0) rotate(55deg);
+    transform: translate3d(-203px, -263px, 0) rotate(55deg);
+  }
 }
 
 @keyframes fill-level {
   0% {
+    -webkit-transform: translate3d(-413px, -53px, 0) rotate(45deg);
     transform: translate3d(-413px, -53px, 0) rotate(45deg);
   }
   15% {
+    -webkit-transform: translate3d(-393px, -73px, 0) rotate(25deg);
     transform: translate3d(-393px, -73px, 0) rotate(25deg);
   }
   30% {
+    -webkit-transform: translate3d(-343px, -123px, 0) rotate(45deg);
     transform: translate3d(-343px, -123px, 0) rotate(45deg);
   }
   45% {
+    -webkit-transform: translate3d(-283px, -183px, 0) rotate(55deg);
     transform: translate3d(-283px, -183px, 0) rotate(55deg);
   }
   60% {
+    -webkit-transform: translate3d(-263px, -203px, 0) rotate(45deg);
     transform: translate3d(-263px, -203px, 0) rotate(45deg);
   }
   75% {
+    -webkit-transform: translate3d(-243px, -223px, 0) rotate(35deg);
     transform: translate3d(-243px, -223px, 0) rotate(35deg);
   }
   90% {
+    -webkit-transform: translate3d(-223px, -243px, 0) rotate(45deg);
     transform: translate3d(-223px, -243px, 0) rotate(45deg);
   }
   100% {
+    -webkit-transform: translate3d(-203px, -263px, 0) rotate(55deg);
     transform: translate3d(-203px, -263px, 0) rotate(55deg);
   }
 }
 .fill {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 20;
   position: relative;
@@ -269,13 +399,16 @@
   padding: 0;
   border-radius: 50% 50% 50% 50%;
   overflow: hidden;
+  -webkit-transform: rotate(-45deg);
   transform: rotate(-45deg);
 }
 .fill .gooey-container {
+  -webkit-filter: url(#gooey-fill);
   filter: url(#gooey-fill);
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 300px;
   height: 300px;
@@ -297,19 +430,39 @@
   width: 500px;
   height: 350px;
   text-align: center;
+  -webkit-transform-origin: 50% 0;
   transform-origin: 50% 0;
+  -webkit-transform: translate3d(-413px, -53px, 0) rotate(45deg);
   transform: translate3d(-413px, -53px, 0) rotate(45deg);
+  -webkit-animation: fill-level 5s linear infinite;
   animation: fill-level 5s linear infinite;
   box-shadow: 0 0 100px 0 #0000ff inset,  0 0 200px 0 #0000ff inset;
 }
-@keyframes fill-bubbles {
+@-webkit-keyframes fill-bubbles {
   0% {
+    -webkit-transform: translate3d(-100px, -20px, 0) rotate(0deg);
     transform: translate3d(-100px, -20px, 0) rotate(0deg);
   }
   50% {
+    -webkit-transform: translate3d(100px, -40px, 0) rotate(180deg);
     transform: translate3d(100px, -40px, 0) rotate(180deg);
   }
   100% {
+    -webkit-transform: translate3d(-100px, -20px, 0) rotate(360deg);
+    transform: translate3d(-100px, -20px, 0) rotate(360deg);
+  }
+}
+@keyframes fill-bubbles {
+  0% {
+    -webkit-transform: translate3d(-100px, -20px, 0) rotate(0deg);
+    transform: translate3d(-100px, -20px, 0) rotate(0deg);
+  }
+  50% {
+    -webkit-transform: translate3d(100px, -40px, 0) rotate(180deg);
+    transform: translate3d(100px, -40px, 0) rotate(180deg);
+  }
+  100% {
+    -webkit-transform: translate3d(-100px, -20px, 0) rotate(360deg);
     transform: translate3d(-100px, -20px, 0) rotate(360deg);
   }
 }
@@ -319,58 +472,104 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
+  -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
   transform: rotate(0deg) translate3d(0, 0, 0);
   box-shadow: 0 0 30px 20px #0000ff inset;
 }
 .fill .gooey-container .bubble:nth-child(1) {
+  -webkit-animation: fill-bubbles 1.5s ease 0.5s infinite;
   animation: fill-bubbles 1.5s ease 0.5s infinite;
 }
 .fill .gooey-container .bubble:nth-child(2) {
+  -webkit-animation: fill-bubbles 3s ease 0.25s infinite;
   animation: fill-bubbles 3s ease 0.25s infinite;
 }
 .fill .gooey-container .bubble:nth-child(3) {
+  -webkit-animation: fill-bubbles 4.5s ease 0.1666666667s infinite;
   animation: fill-bubbles 4.5s ease 0.1666666667s infinite;
 }
 .fill .gooey-container .bubble:nth-child(4) {
+  -webkit-animation: fill-bubbles 6s ease 0.125s infinite;
   animation: fill-bubbles 6s ease 0.125s infinite;
 }
 .fill .gooey-container .bubble:nth-child(5) {
+  -webkit-animation: fill-bubbles 7.5s ease 0.1s infinite;
   animation: fill-bubbles 7.5s ease 0.1s infinite;
 }
 .fill .gooey-container .bubble:nth-child(6) {
+  -webkit-animation: fill-bubbles 9s ease 0.0833333333s infinite;
   animation: fill-bubbles 9s ease 0.0833333333s infinite;
 }
 .fill .gooey-container .bubble:nth-child(7) {
+  -webkit-animation: fill-bubbles 10.5s ease 0.0714285714s infinite;
   animation: fill-bubbles 10.5s ease 0.0714285714s infinite;
 }
 .fill .gooey-container .bubble:nth-child(8) {
+  -webkit-animation: fill-bubbles 12s ease 0.0625s infinite;
   animation: fill-bubbles 12s ease 0.0625s infinite;
+}
+
+@-webkit-keyframes black-hole {
+  0% {
+    -webkit-transform: scale(1) translate3d(75px, 0, 0);
+    transform: scale(1) translate3d(75px, 0, 0);
+  }
+  50% {
+    -webkit-transform: scale(4) translate3d(55px, 0, 0);
+    transform: scale(4) translate3d(55px, 0, 0);
+  }
+  100% {
+    -webkit-transform: scale(1) translate3d(75px, 0, 0);
+    transform: scale(1) translate3d(75px, 0, 0);
+  }
 }
 
 @keyframes black-hole {
   0% {
+    -webkit-transform: scale(1) translate3d(75px, 0, 0);
     transform: scale(1) translate3d(75px, 0, 0);
   }
   50% {
+    -webkit-transform: scale(4) translate3d(55px, 0, 0);
     transform: scale(4) translate3d(55px, 0, 0);
   }
   100% {
+    -webkit-transform: scale(1) translate3d(75px, 0, 0);
     transform: scale(1) translate3d(75px, 0, 0);
+  }
+}
+@-webkit-keyframes black-hole-rotate {
+  0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) skew(3deg);
+    transform: translate(-50%, -50%) rotate(0deg) skew(3deg);
+  }
+  50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) skew(0deg);
+    transform: translate(-50%, -50%) rotate(180deg) skew(0deg);
+  }
+  100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) skew(3deg);
+    transform: translate(-50%, -50%) rotate(360deg) skew(3deg);
   }
 }
 @keyframes black-hole-rotate {
   0% {
+    -webkit-transform: translate(-50%, -50%) rotate(0deg) skew(3deg);
     transform: translate(-50%, -50%) rotate(0deg) skew(3deg);
   }
   50% {
+    -webkit-transform: translate(-50%, -50%) rotate(180deg) skew(0deg);
     transform: translate(-50%, -50%) rotate(180deg) skew(0deg);
   }
   100% {
+    -webkit-transform: translate(-50%, -50%) rotate(360deg) skew(3deg);
     transform: translate(-50%, -50%) rotate(360deg) skew(3deg);
   }
 }
 .black-hole {
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 20;
   position: relative;
@@ -388,13 +587,16 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%) rotate(0deg) skew(5deg);
   transform: translate(-50%, -50%) rotate(0deg) skew(5deg);
+  -webkit-filter: url(#gooey-plasma-2);
   filter: url(#gooey-plasma-2);
   width: 450px;/*300*/
   height: 450px;
   padding: 0;
   margin: 0;
   box-shadow: 0 0 0 22px #4100ff inset; /*#9900ff*/
+  -webkit-animation: black-hole-rotate 5s ease infinite;
   animation: black-hole-rotate 5s ease infinite;
   -moz-animation: black-hole-rotate 5s ease infinite;
 }
@@ -413,43 +615,56 @@
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  -webkit-transform: scale(1) translate3d(75px, 0, 0);
   transform: scale(1) translate3d(75px, 0, 0);
   box-shadow: 0 0 10px 0 #4100ff inset, 0 0 10px 0 #4100ff inset;
 }
 .black-hole .gooey-container .bubble:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(60deg);
   transform: translate(-50%, -50%) rotate(60deg);
 }
 .black-hole .gooey-container .bubble:nth-child(1):before {
+  -webkit-animation: black-hole 1s ease 0.5s infinite;
   animation: black-hole 1s ease 0.5s infinite;
 }
 .black-hole .gooey-container .bubble:nth-child(2) {
+  -webkit-transform: translate(-50%, -50%) rotate(120deg);
   transform: translate(-50%, -50%) rotate(120deg);
 }
 .black-hole .gooey-container .bubble:nth-child(2):before {
+  -webkit-animation: black-hole 2s ease 1s infinite;
   animation: black-hole 2s ease 1s infinite;
 }
 .black-hole .gooey-container .bubble:nth-child(3) {
+  -webkit-transform: translate(-50%, -50%) rotate(180deg);
   transform: translate(-50%, -50%) rotate(180deg);
 }
 .black-hole .gooey-container .bubble:nth-child(3):before {
+  -webkit-animation: black-hole 3s ease 1.5s infinite;
   animation: black-hole 3s ease 1.5s infinite;
 }
 .black-hole .gooey-container .bubble:nth-child(4) {
+  -webkit-transform: translate(-50%, -50%) rotate(240deg);
   transform: translate(-50%, -50%) rotate(240deg);
 }
 .black-hole .gooey-container .bubble:nth-child(4):before {
+  -webkit-animation: black-hole 4s ease 2s infinite;
   animation: black-hole 4s ease 2s infinite;
 }
 .black-hole .gooey-container .bubble:nth-child(5) {
+  -webkit-transform: translate(-50%, -50%) rotate(300deg);
   transform: translate(-50%, -50%) rotate(300deg);
 }
 .black-hole .gooey-container .bubble:nth-child(5):before {
+  -webkit-animation: black-hole 5s ease 2.5s infinite;
   animation: black-hole 5s ease 2.5s infinite;
 }
 .black-hole .gooey-container .bubble:nth-child(6) {
+  -webkit-transform: translate(-50%, -50%) rotate(360deg);
   transform: translate(-50%, -50%) rotate(360deg);
 }
 .black-hole .gooey-container .bubble:nth-child(6):before {
+  -webkit-animation: black-hole 6s ease 3s infinite;
   animation: black-hole 6s ease 3s infinite;
 }
 
@@ -488,3 +703,4 @@
   position: absolute;
   width: 100%;
 }
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+
+    body{
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+
+    .bg-transparency-dark{
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+      .img-board{
+        max-width: 12.5rem;
+        height: auto;
+      }
+
+      .portfolium-header{
+        background-color: #070707;
+      }
+
+      .portfolium-block{
+        background-color: #070707;
+      }
+
+      .text-box{
+        background-color: #EAEAEA;
+      }
+
+      .news{
+        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
+        background-size: cover;
+        /*filter: invert(1) hue-rotate(210deg);*/
+      }
+
+      .card-header{
+        border-radius: 0 !important;
+      }
+
+      .card-sizing{
+
+      }
+
+      .come-in {
+        transform: translateY(150px);
+        animation: come-in 0.8s ease forwards;
+      }
+      .come-in:nth-child(odd) {
+        animation-duration: 0.6s;
+      }
+      .already-visible {
+        transform: translateY(0);
+        animation: none;
+      }
+
+      @keyframes come-in {
+        to { transform: translateY(0); }
+      }
+
+      .card-column{
+        text-align: left;
+        column-count: 4;
+        column-gap: 8px; }
+        @media screen and (max-width: 1200px) {
+          section {
+            column-count: 2; } }
+        @media screen and (max-width: 800px) {
+          section {
+            column-count: 1; } }
+        section > .card {
+          margin-bottom: 8px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+        .non-style-brand{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        .btn{
+          font-weight: 700;
+        }
+    </style>
+  </head>
+  <body class="bg-soft">
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark py-md-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="dist/img/logo/last-blacklightbrand2.png" width="32" class="img-fluid brand" alt="Responsive image">
+        </a>
+        <div class="navbar-collapse justify-content-stretch">
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-brand non-style-brand" href="">
+              Portals
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+      <div class="container-fluid bg-soft">
+
+        <div class="row">
+          <div class="col-lg-4 col-md-4 col-12 bg-soft pt-1">
+            <div class="sticky-top py-3 px-2">
+              <div class="">
+                <div class="">
+                  <img class="img-fluid d-block mx-auto shadow-image rounded" width="250" src="dist/img/logo/emma8photo5-2icon.jpg" title="source: imgur.com" />
+                  <h1 class="text-center text-dark my-3"><strong>ULTIMATE MERCER</strong></h1>
+                </div>
+                <div class="">
+                  <p>I am a creative illustrator and graphic designer with more than 10 years of experience.</p>
+                  <p>Originally from Toronto, currently based in London.</p>
+                  <i class="fab fa-facebook fa-2x"></i>
+                  <i class="fab fa-instagram fa-2x"></i>
+                  <i class="fab fa-twitter-square fa-2x"></i>
+                  <i class="fab fa-github fa-2x"></i>
+                  <i class="fab fa-steam fa-2x"></i>
+                  <i class="fab fa-discord fa-2x"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-8 col-md-8 col-12 bg-soft p-0">
+            <div class="col-12 bg-dark">
+              <div class="py-5 px-3">
+                <h2 class="text-light"><strong>Sobre mim</strong></h2>
+                <p class="text-light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              </div>
+            </div>
+            <div class="col-12 bg-info">
+              <div class="py-5 px-3">
+                <h2 class="text-dark"><strong>Desenvolvedor Front-end</strong></h2>
+                <h4 class="text-dark">Linguagens conhecidas:</h4>
+                <h5>
+                  <span class="badge bg-dark text-info my-1">HTML</span>
+                  <span class="badge bg-dark text-info my-1">CSS</span>
+                  <span class="badge bg-dark text-info my-1">SASS/SCSS</span>
+                  <span class="badge bg-dark text-info my-1">PHP</span>
+                </h5>
+                <h4 class="text-dark">Ferramentas de desenvolvimento:</h4>
+                <h5>
+                  <span class="badge bg-dark text-info my-1">Atom</span>
+                  <span class="badge bg-dark text-info my-1">Sublime</span>
+                  <span class="badge bg-dark text-info my-1">Bootstrap</span>
+                  <span class="badge bg-dark text-info my-1">jQuery</span>
+                  <span class="badge bg-dark text-info my-1">GitHub</span>
+                  <span class="badge bg-dark text-info my-1">GitKraken</span>
+                  <span class="badge bg-dark text-info my-1">NodeJS</span>
+                  <span class="badge bg-dark text-info my-1">NPM</span>
+                </h5>
+              </div>
+
+            </div>
+
+            <div class="col-12 bg-purple">
+              <div class="py-5 px-3">
+                <h2 class="text-dark"><strong>Design</strong></h2>
+                <h4 class="text-dark">O que eu gosto de desenvolver:</h4>
+                <h5>
+                  <span class="badge bg-dark text-purple my-1">Websites</span>
+                  <span class="badge bg-dark text-purple my-1">Posters</span>
+                  <span class="badge bg-dark text-purple my-1">Wallpapers</span>
+                  <span class="badge bg-dark text-purple my-1">Capas</span>
+                </h5>
+                <h4 class="text-dark">Ferramentas de design:</h4>
+                <h5>
+                  <span class="badge bg-dark text-purple my-1">Adobe Photoshop</span>
+                  <span class="badge bg-dark text-purple my-1">Adobe Illustrator</span>
+                  <span class="badge bg-dark text-purple my-1">Adobe XD</span>
+                  <span class="badge bg-dark text-purple my-1">Invision</span>
+                </h5>
+              </div>
+
+            </div>
+
+            <div class="col-12 bg-dark">
+              <div class="py-4 px-3">
+                <h2 class="text-light"><strong>Meus Trabalhos</strong></h2>
+                <p class="text-light">Aqui reúno todos os trabalhos e idéias desenvolvidas, tanto para o âmbito acadêmico,
+                  quanto para o pessoal com o intuito de aperfeiçoar técnicas e uso da criatividade.</p>
+                <h4 class="text-light">Legenda:</h4>
+                <h5>
+                  <span class="badge bg-orange text-dark my-1">Projeto Pessoal</span>
+                  <span class="badge bg-primary text-dark my-1">Projeto Acadêmico/Profissional</span>
+                </h5>
+                <div class="grid row">
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/4rerhe8.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-primary">Coleção</span></h5>
+                        <h3 class="mb-0">Burnshop</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/6VtLx0M.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-primary">Coleção</span></h5>
+                        <h3 class="mb-0">Painel de Gerenciamento - Tô Dentro</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/NnCqPa5.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">Dragon Ball</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/z8V94Q8.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">Vitola Wars</h3>
+                        <p class=" mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                        <a href="UltimateMercer-VitolaWars.html" class="btn btn-orange btn-block" target="_blank">Ver coleção</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/N1fca1h.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-primary">Coleção</span></h5>
+                        <h3 class="mb-0">Design Corpo Nu</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/hhkHuu0.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-primary">Coleção</span></h5>
+                        <h3 class="mb-0">Teamder</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/vlT3MI1.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">Infográfico Cartoon Networ</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/WH3nZum.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">GTA - Style</h3>
+                        <p class=" mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/WH3nZum.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">GTA - Style</h3>
+                        <p class=" mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/NnCqPa5.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">Dragon Ball</h3>
+                        <p class="mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 grid-item my-3">
+                    <div class="masonry-area">
+                      <!-- Card image -->
+                      <div class="">
+                        <a href="#!" class="masonry-area-image with-hover-overlay">
+                          <img class="img-fluid" src="https://i.imgur.com/z8V94Q8.png" alt="Card image cap">
+                        </a>
+                      </div>
+                      <div class="masonry-area-hover-text-header">
+                        <h5><span class="badge bg-orange">Coleção</span></h5>
+                        <h3 class="mb-0">Vitola Wars</h3>
+                        <p class=" mb-1">This is a wider card.</p>
+                        <p class="">Nov 11</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+        </div>
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
+
+
+  </body>
+</html>

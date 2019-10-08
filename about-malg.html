@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Bootstrap CSS -->
+    <link href="dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <title>Hello, world!</title>
+
+    <style type="text/css">
+
+    body{
+      font-family: "IBM Plex Sans", sans-serif;
+    }
+
+    .bg-transparency-dark{
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+      .img-board{
+        max-width: 12.5rem;
+        height: auto;
+      }
+
+      .portfolium-header{
+        background-color: #070707;
+      }
+
+      .portfolium-block{
+        background-color: #070707;
+      }
+
+      .text-box{
+        background-color: #EAEAEA;
+      }
+
+      .news{
+        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
+        background-size: cover;
+        /*filter: invert(1) hue-rotate(210deg);*/
+      }
+
+      .card-header{
+        border-radius: 0 !important;
+      }
+
+      .card-sizing{
+
+      }
+
+      .come-in {
+        transform: translateY(150px);
+        animation: come-in 0.8s ease forwards;
+      }
+      .come-in:nth-child(odd) {
+        animation-duration: 0.6s;
+      }
+      .already-visible {
+        transform: translateY(0);
+        animation: none;
+      }
+
+      @keyframes come-in {
+        to { transform: translateY(0); }
+      }
+
+      .card-column{
+        text-align: left;
+        column-count: 4;
+        column-gap: 8px; }
+        @media screen and (max-width: 1200px) {
+          section {
+            column-count: 2; } }
+        @media screen and (max-width: 800px) {
+          section {
+            column-count: 1; } }
+        section > .card {
+          margin-bottom: 8px;
+          break-inside: avoid;
+          page-break-inside: avoid;
+          page-break-before: avoid;
+        }
+        .non-style-brand{
+          font-family: 'IBM Plex Sans', sans-serif;
+          font-weight: 700;
+          font-size: 1.5rem;
+        }
+
+        .btn{
+          font-weight: 700;
+        }
+        .bar-malg{
+          height: 10px;
+          width: 100px;
+          position: relative;
+        }
+
+        .obra{
+          width: 60%;
+          height: auto;
+        }
+
+        .tooltip-inner{
+          background-color: #121212;
+          color: #f8f9fa;
+          border-radius: 0;
+        }
+
+        .tooltip.show{
+          opacity: 1;
+        }
+        p {
+          font-size: 1.15rem;
+        }
+
+        .img-title{
+
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          height: 100vh;
+
+        }
+
+        .post-header{
+          padding: 400px 0 0px;
+          color: white;
+        }
+    </style>
+  </head>
+  <body class="bg-soft">
+
+    <nav class="navbar navbar-expand navbar-light bg-soft py-md-2">
+      <div class="container">
+        <a class="navbar-brand non-style-brand" href="index.html">
+          <img src="dist/img/logo/malg.png" width="120" class="img-fluid brand" alt="MALG">
+        </a>
+        <div class="navbar-collapse justify-content-stretch">
+          <ul class="navbar-nav ml-auto">
+            <a class="navbar-brand non-style-brand" href="">
+
+            </a>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="img-title shadow-image view" style="background-image:url('https://scontent.fpoa12-1.fna.fbcdn.net/v/t1.0-9/32710838_1068828399934734_1049027096120131584_o.jpg?_nc_cat=109&_nc_oc=AQnPvMT4KMcEqfEnGR_czsmZlKXto-1PZprKfY1oJ1fLL9BmwptAsTEtag2Dq_zyDj4&_nc_ht=scontent.fpoa12-1.fna&oh=e495cb881b4e191db738d402fcb33f5b&oe=5E387855')">
+      <div class="mask rgba-black-light"></div>
+      <div class="container">
+        <div class="row">
+          <div class="">
+            <div class="post-header">
+              <h1 class="text-light mb-3">
+                <span class="py-1 bg-dark line-teste">
+                  <strong>Sobre o Museu</strong>
+                </span>
+              </h1>
+              <div class="bar-malg bg-dark mb-3"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-soft pt-5 pb-5">
+      <div class="col-lg-10 offset-lg-1 col-md-8 offset-md-2 col-10 offset-1">
+        <h2 class="text-light mb-3">
+          <span class="py-1 bg-dark line-teste">
+            <strong>História</strong>
+          </span>
+        </h2>
+        <div class="bar-malg bg-dark mb-3"></div>
+        <div class="mb-4">
+          <h3>
+            <a href="#" class="text-dark mr-3" >
+              <i class="fas fa-volume-up" data-toggle="tooltip" data-placement="right" title="Audiodescrição"></i>
+            </a>
+            <a href="#" class="text-dark mr-3" data-toggle="tooltip" data-placement="right" title="Idioma">
+              <i class="fas fa-language"></i>
+            </a>
+          </h3>
+
+        </div>
+        <p>
+          Inaugurado em 1986, o Museu de Arte Leopoldo Gotuzzo é ligado ao Centro de Artes da Universidade Federal de Pelotas.
+        </p>
+
+        <p>
+          Sua missão está associada à conservação e divulgação da produção do pintor gaúcho e pelotense Leopoldo Gotuzzo e à produção e comunicação de conhecimento em artes visuais.
+        </p>
+
+        <p>
+          O acervo possui mais de 3000 obras divididas em sete coleções: Coleção Leopoldo Gotuzzo, Coleção Ex-alunos da EBA, Coleção Dr. João Gomes de Mello, Coleção Faustino Trápaga, Coleção L. C. Vinholes, Coleção Século XX e Coleção Século XXI.
+        </p>
+
+        <p>
+          Encontra-se em exposição permanente objetos e obras do artista, além de exposições temporárias de artistas convidados, obras pertencentes às coleções do Museu e exposições em parceria com outras instituições.
+        </p>
+        <div class="bar-malg bg-dark mb-3"></div>
+        <p>
+          O Museu de Arte Leopoldo Gotuzzo (MALG) é um órgão suplementar do Centro de Artes (CA) da Universidade Federal de Pelotas (UFPEL), aberto à comunidade e sem fins lucrativos, de natureza cultural, que tem como missão zelar pela preservação e conservação de seu acervo artístico e documental, assim como divulgá-lo amplamente, através de projetos curatoriais, expográficos e virtuais.
+        </p>
+
+        <p>
+          Cabe ao MALG  garantir a integridade física do acervo de obras de Leopoldo Gotuzzo, patrono do museu, e promover a pesquisa e a produção crítica e intelectual a respeito de sua contribuição para a história da arte brasileira. O MALG também tem responsabilidade de desenvolver projetos educativos que ampliem o acesso da população brasileira aos bens artísticos e culturais produzidos no passado e na atualidade.
+        </p>
+
+        <p>
+          Exposições temporárias de obras pertencentes a outras coleções, incluindo a produção artística contemporânea, deverão ser realizadas no MALG em conjunto com os profissionais em atuação no Centro de Artes da UFPEL, ou através de projetos  de cooperação interinstitucionais.
+        </p>
+        <h2 class="text-light pt-3 mb-3">
+          <span class="py-1 bg-dark line-teste">
+            <strong>Equipe</strong>
+          </span>
+        </h2>
+        <div class="bar-malg bg-dark mb-3"></div>
+        <p><strong> Diretor:</strong> Lauer A. N. Santos</p>
+        <p> <strong>Diretora Adjunta:</strong> Mari Lúcie Loreto</p>
+        <p> <strong> Ação Educativa:</strong> Consuelo S. Rocha</p>
+        <p> <strong>Conservação e Restauro:</strong> Fábio Galli</p>
+        <p> <strong>Museóloga:</strong> Joana Lizott</p>
+        <p> <strong>Pesquisa e Documentação:</strong> Roberta Trierweiler</p>
+      </div>
+
+    </div>
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="dist/js/masonry.pkgd.min.js"></script>
+    <script type="text/javascript" src="dist/js/teste.js"></script>
+
+
+  </body>
+</html>
