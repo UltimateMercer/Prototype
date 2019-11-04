@@ -5,10 +5,10 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!--link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700" rel="stylesheet"-->
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400i,700,700i,900,900i&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,400i,500,700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap" rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans+Condensed:400,400i,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,500,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Bootstrap CSS -->
@@ -22,178 +22,57 @@
       font-family: "Roboto Mono", sans-serif;
     }
 
-    .bg-transparency-dark{
-      background: transparent;
+    .nav-header{
+      top: 100px;
     }
-      .img-board{
-        max-width: 12.5rem;
-        height: auto;
-      }
 
-      .redlight-header{
-        /*background-image: url('https://i.imgur.com/1k8By32.png');*/
-        background-color: #A220B8;
-        background-size: cover;
-        background-position: center;
+    .duotoned--peachy {
+      filter: url('#duotone_peachypink');
+    }
 
-        max-height: 20rem;
-      }
+    .duotoned--navy {
+      filter: url('#duotone_navyorange');
+    }
 
+    .duotone--redblue{
+      filter: url('#duotone_redblue');
+    }
 
-      .news{
-        background-image: url('https://i.imgur.com/DFUPYfm.jpg');
-        background-size: cover;
-        /*filter: invert(1) hue-rotate(210deg);*/
-      }
+    .duotone-spotify-blue{
+      filter: url('#duotone_spotify_blue');
+    }
 
-      .img-title{
+    .duotone-bluered{
+      filter: url('#duotone_blue_red');
+    }
 
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 100vh;
+    .duotone-bluepink{
+      filter: url('#duotone_pink_blue');
+    }
 
-      }
+    .duotone-bw{
+      filter: url('#duotone_bw');
+    }
 
-      .post-header{
-        padding: 150px 0 0px;
-        color: white;
-      }
+    .duotone-op2{
+      filter: url('#duotone_op2');
+    }
 
-      .nav-header{
-        top: 100px;
-      }
-
-      .next, .previous{
-        height: 21rem;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .avatar {
-        vertical-align: middle;
-        width: 7.5rem;
-        height: 7.5rem;
-        border-radius: 50%;
-      }
-
-      .test-image{
-        margin-bottom: 1.25rem;
-        width: 100%;
-        height: 20rem;
-        background-attachment: fixed;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-      }
-
-      .ad-sense{
-        height: 15rem;
-
-      }
-
-      .post-head{
-        position: relative;
-        overflow: hidden;
-        cursor: default;
-        height: 450px;
-
-      }
-
-      .post-head .post-head-overlay{
-          background-image: url('dist/img/logo/filter2.png');
-          background-blend-mode: overlay;
-          position: absolute;
-          top: 0;
-          left: 0;
-          right: 0;
-          bottom: 0;
-          overflow: hidden;
-          width: 100%;
-          height: 100%;
-
-          /*background-attachment: fixed;*/
-      }
-
-       .overlay-head{
-
-        height: 500px;
-        background-blend-mode: overlay;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        width: 40%;
-      }
-
-      .post-head .text-head{
-        text-align: center;
-      }
-
-      body {
-        background: #1d1f20;
-        text-align: center;
-      }
-
-      .svg-filters {
-        height: 0;
-        left: -9999em;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        width: 0;
-      }
-
-      .img {
-        margin: 5px;
-        width: 350px;
-      }
-
-      hr {
-        border: solid 1px #191919;
-      }
-
-      .duotoned--peachy {
-        filter: url('#duotone_peachypink');
-      }
-
-      .duotoned--navy {
-        filter: url('#duotone_navyorange');
-      }
-
-      .duotone--redblue{
-        filter: url('#duotone_redblue');
-      }
-
-      .duotone-spotify-blue{
-        filter: url('#duotone_spotify_blue');
-      }
-
-      .duotone-bluered{
-        filter: url('#duotone_blue_red');
-      }
-
-      .duotone-bluepink{
-        filter: url('#duotone_pink_blue');
-      }
-
-      .duotone-bw{
-        filter: url('#duotone_bw');
-      }
-
-      .duotone-op2{
-        filter: url('#duotone_op2');
-      }
-
-      .duotone-op3{
-        filter: url('#duotone_op3');
-      }
+    .duotone-op3{
+      filter: url('#duotone_op3');
+    }
     </style>
   </head>
   <body class="bg-soft">
 
-    <nav class="navbar navbar-expand fixed-top navbar-light bg-dark py-md-2">
+    <nav class="navbar navbar-expand fixed-top navbar-dark bg-soft py-md-2">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="dist/img/logo/last-blacklightbranddark.png" width="32" class="img-fluid brand" alt="Responsive image">
+        </a>
+      </div>
+    </nav>
+    <!--nav class="navbar navbar-expand fixed-top navbar-light bg-dark py-md-2">
       <div class="container">
         <a class="navbar-brand" href="index.html">
           <img src="dist/img/logo/last-blacklightbrand2.png" width="32" class="img-fluid brand" alt="Responsive image">
@@ -206,20 +85,21 @@
           </ul>
         </div>
       </div>
-    </nav>
+    </nav-->
 
-    <!--nav class="nav-header">
+    <nav class="nav-header">
       <ul class="">
         <li class="">
-          <a href="now.html" class="text-dark bg-light py-2" data-toggle="tooltip" data-placement="bottom" title="Voltar"><i class="fas fa-arrow-left fa-2x"></i></a>
+          <a href="index.html" class="text-dark bg-light py-1 px-2" data-toggle="tooltip" data-placement="bottom" title="Voltar"><i class="fas fa-arrow-left fa-2x"></i></a>
         </li>
       </ul>
-    </nav-->
+    </nav>
   <div class="" style="margin-top:66px;"></div>
+
   <div class="header-content">
     <div class="header-width-50" >
-      <div class="header-image view" style="background-image:url('dist/img/logo/e-u-g.jpg');">
-        <div class="mask texture-mask-6"></div>
+      <div class="header-image view duotone-bluered" style="background-image:url('https://i.imgur.com/WOL8Ywf.jpg');">
+        <div class="mask texture-mask-4"></div>
       </div>
     </div>
     <div class="container">
@@ -227,7 +107,7 @@
         <div class="header-post ">
           <h1 class="blog-post-title mb-3 text-center">
             <span class="py-1 bg-soft text-dark line-teste">
-              Ultimate Mercer: Be The Revolution, Join The Ultimates
+              Kiernan Shipka cotada para o papel de Spider Gwen!
             </span>
           </h1>
           <h5 class="blog-post-meta mt-3 text-right">
@@ -238,64 +118,44 @@
         </div>
       </div>
     </div>
-
   </div>
 
-  <div class="container-fluid my-5 p-0 bg-dark">
-    <div class="header-content">
-      <div class="header-width-50" >
-        <div class="header-image view duotone-bluered" style="background-image:url('https://i.imgur.com/Mo2BSC6.jpg');">
-          <div class="mask texture-mask-6"></div>
-        </div>
+  <div class="container-fluid">
+    <div class="col-lg-6 offset-lg-3 col-md-8 offset-md-2 col-12 mt-4">
+      <div class="blog-post">
+        <p>Cum sociis natoque penatibus et magnis <a href="#">dis parturient montes</a>, nascetur ridiculus mus. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Sed posuere consectetur est at lobortis. Cras mattis consectetur purus sit amet fermentum.</p>
+        <blockquote>
+          <p>Curabitur blandit tempus porttitor. <strong>Nullam quis risus eget urna mollis</strong> ornare vel eu leo. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+        </blockquote>
+        <p>Etiam porta <em>sem malesuada magna</em> mollis euismod. Cras mattis consectetur purus sit amet fermentum. Aenean lacinia bibendum nulla sed consectetur.</p>
+        <blockquote class="blockquote large text-center">
+          <h2 class=""><i>"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante." - Wilmer Valderrama</i></h2>
+        </blockquote>
+        <h2>Heading</h2>
+        <p>Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+        <h3>Sub-heading</h3>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
+        <pre><code>Example code block</code></pre>
+        <p>Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa.</p>
+        <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+        <ul>
+          <li>Praesent commodo cursus magna, vel scelerisque nisl consectetur et.</li>
+          <li>Donec id elit non mi porta gravida at eget metus.</li>
+          <li>Nulla vitae elit libero, a pharetra augue.</li>
+        </ul>
+        <p>Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.</p>
+        <ol>
+          <li>Vestibulum id ligula porta felis euismod semper.</li>
+          <li>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</li>
+          <li>Maecenas sed diam eget risus varius blandit sit amet non magna.</li>
+        </ol>
+        <p>Cras mattis consectetur purus sit amet fermentum. Sed posuere consectetur est at lobortis.</p>
       </div>
-      <div class="container">
-        <div class="col-lg-8 offset-lg-2 col-12">
-          <div class="header-post">
-            <h1 class="blog-post-title mb-3 text-center">
-              <span class="py-1 bg-dark text-grey line-teste">
-                Ultimate Mercer: Be The Revolution, Join The Ultimates
-              </span>
-            </h1>
-            <h5 class="blog-post-meta mt-3 text-right">
-              <span class="py-1 bg-dark text-grey">
-                25 de Abril por Ultimate Mercer
-              </span>
-            </h5>
-          </div>
-        </div>
-      </div>
-
     </div>
 
   </div>
 
-  <div class="container-fluid my-5 p-0 bg-dark">
-    <div class="header-content">
-      <div class="header-width-50" >
-        <div class="header-image view" style="background-image:url('https://i.imgur.com/oO5abXP.jpg');">
-          <div class="mask texture-mask-6"></div>
-        </div>
-      </div>
-      <div class="container">
-        <div class="col-lg-8 offset-lg-2 col-12">
-          <div class="header-post">
-            <h1 class="blog-post-title mb-3 text-center">
-              <span class="py-1 bg-dark text-grey line-teste">
-                Ultimate Mercer: Be The Revolution, Join The Ultimates
-              </span>
-            </h1>
-            <h5 class="blog-post-meta mt-3 text-right">
-              <span class="py-1 bg-dark text-grey">
-                25 de Abril por Ultimate Mercer
-              </span>
-            </h5>
-          </div>
-        </div>
-      </div>
 
-    </div>
-
-  </div>
   <!-- Duotone Article Demo -->
 
     <svg xmlns="http://www.w3.org/2000/svg" class="svg-filters">
@@ -441,6 +301,13 @@
           </feComponentTransfer>
       </filter>
     </svg>
+
+
+
+
+
+
+
 
 
 
