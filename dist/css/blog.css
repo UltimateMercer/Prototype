@@ -95,9 +95,24 @@ h1, h2, h3, h4, h5, h6 {
 /*
  * Blog posts
  */
-.blog-post {
+.blog-post-serif {
+  font-family: "EB Garamond", serif;
   margin-bottom: 2rem;
   font-size: 1.33rem;
+  line-height: 1.33;
+}
+
+.blog-post-monospace {
+  font-family: "Roboto Mono", monospace;
+  margin-bottom: 2rem;
+  font-size: 1.20rem;
+  line-height: 1.33;
+}
+
+.blog-post-condensed{
+  font-family: "Roboto Condensed", sans-serif;
+  margin-bottom: 2rem;
+  font-size: 1.20rem;
   line-height: 1.33;
 }
 
@@ -112,8 +127,16 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 @media screen and (max-width: 768px){
-  .blog-post {
-    font-size: 1rem;
+  .blog-post-serif {
+    font-size: 1.20rem;
+  }
+
+  .blog-post-monospace{
+    font-size: 1.15rem;
+  }
+
+  .blog-post-condensed{
+    font-size: 1.15rem;
   }
 
   .blog-post-title {
@@ -138,5 +161,4 @@ h1, h2, h3, h4, h5, h6 {
 .blog-footer p:last-child {
   margin-bottom: 0;
 }
-
 /*# sourceMappingURL=blog.css.map */
