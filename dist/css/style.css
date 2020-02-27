@@ -19,7 +19,7 @@
 }
 
 .card-blog-post{
-  min-height: 550px;
+  min-height: 525px;
 }
 
 .card-full-image{
@@ -36,8 +36,8 @@
 }
 
 .card-full-image:hover{
-  transform: scale(1.07);
-  -webkit-transform: scale(1.07);
+  transform: scale(1.01);
+  -webkit-transform: scale(1.01);
 }
 
 .hovering{
